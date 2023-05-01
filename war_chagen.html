@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+        <meta charset="utf-8">
+        <title>Sidebar Menu with sub-menu | CodingNepal</title>
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="sidebar.css">
+        <link rel="stylesheet" href="grid.css">
+        <link rel="stylesheet" href="dropdown.js">
+        <link rel="stylesheet" href="active.js">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="parent">
+
+    <div class="one">Warhammer 2. edition - Character Generation
+
+</div>
+
+    <div class="two">
+        <div class="btn">
+                <span class="fas fa-arrow-down"></span>
+        </div>
+            <div class="cont_center">
+                <nav class="sidebar">
+                    <div class="text">
+                       <img class="text" src="../channel-picture/dagon.png" alt="background-header" 
+                        style="width:250px; transform: scaleX(-1);">
+                    </div>
+                        <ul>
+                            <li class="active"><a href="index.html">Metveit & Keepers</a></li>
+                            <li>
+                            <a href="#" class="feat-btn">Warhammer
+                            <span class="fas fa-caret-down first"></span>
+                            </a>
+                                <ul class="feat-show">
+                                    <li><a href="war_chagen.html">Character Generation</a></li>
+                                    <li><a href="war_ancestries.html">Ancestries</a></li>
+                                    <li><a href="war_bascar.html">Basic Careers</a></li>
+                                    <li><a href="war_advcar.html">Advanced Careers</a></li>
+                                    <li><a href="war_talents.html">Talents</a></li>
+                                    <li><a href="war_skills.html">Skills</a></li>
+                                    <li><a href="war_spells.html">Spells</a></li>
+                                    <li><a href="war_equip.html">Equipment</a></li>
+                                    <li><a href="war_rules.html">Rules</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                            <a href="#" class="serv-btn">Conan 2d20
+                            <span class="fas fa-caret-down second"></span>
+                            </a>
+                            <ul class="serv-show">
+                                <li><a href="con_chagen">Character Generation</a></li>
+                                <li><a href="con_home">Homeland</a></li>
+                                <li><a href="con_arche">Archetypes</a></li>
+                                <li><a href="con_talent">Talents</a></li>
+                                <li><a href="con_spell">Spells</a></li>
+                                <li><a href="con_equip">Equipment</a></li>
+                                <li><a href="con_rule">Rules</a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#" class="shor-btn">Symbaroum 5e
+                                <span class="fas fa-caret-down third"></span>
+                                </a>
+                                <ul class="shor-show">
+                                    <li><a href="sym_chagen">Character Generation </a></li>
+                                    <li><a href="sym_ancest">Ancestries </a></li>
+                                    <li><!-- Slett dette om det er problemer med tredje undermeny -->
+                                        <a href="#" class="thir-btn">Classes
+                                        <span class="fas fa-caret-down fourth"></span>
+                                        </a>
+                                            <ul class="thir-show">
+                                                <li><a href="sym_capt.html">Captain</a></li>
+                                                <li><a href="sym_hunt.html">Hunter</a></li>
+                                                <li><a href="sym_myst.html">Mystic</a></li>
+                                                <li><a href="sym_scho.html">Scholar</a></li>
+                                                <li><a href="sym_scou.html">Scoundrel</a></li>
+                                                <li><a href="sym_warr.html">Warrior</a></li>
+                                            </ul>
+                                    </li>
+                                    <li><a href="sym_feat">Feats </a></li>
+                                    <li><a href="sym_skill">Skills </a></li>
+                                    <li><a href="sym_spell">Spells </a></li>
+                                    <li><a href="sym_equip">Equipment </a></li>
+                                    <li><a href="sym_rule">Rules </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="house_rule">House Rules</a></li>
+                            <li><a href="homebrew">Homebrew</a></li>
+                            <li><a href="campaigns">Campaigns</a></li>
+                        </ul> 
+                </nav>
+                <script src="dropdown.js"></script>
+            </div>    
+    </div>
+
+    <div class="three">
+        <h1>Character Generation</h1><br>
+      
+            <h2><p>Generate Characteristics:</p></h2> <br>
+            <li style="margin-left: 20px; list-style-type: none;"><strong>1)</strong> Some entries simply list a number (Attacks, for instance). This means these entries are fixed, so just copy down the number. You’ll note that no race starts the game with Insanity Points, for example, so you’d simply write down 0 under IP on your character sheet for that Characteristic.</li><br>
+            <li style="margin-left: 20px; list-style-type: none;"><strong>2)</strong> Some entries list a base number plus a variable die roll. All the Characteristics from the Main Profile, for example, have a 10, 20, or 30, followed by +2d10. To generate these characteristics, roll the specified dice and add them to the base number given. To generate an Elf ’s Agility, for example, you’d roll 2d10, and add the result to 30. If the two dice came up 3 and 8, the Elf ’s Agility would be 30+3+8=41.</li><br>
+            <li style="margin-left: 20px; list-style-type: none;"><strong>3)</strong> The Strength Bonus and Toughness Bonus Characteristics are different because they are derived from other Characteristics. Your Strength Bonus is equal to the first digit of your Strength Characteristic, while your Toughness Bonus is equal to the first digit of your Toughness Characteristic. For example, a Dwarf with Strength 38 would have a Strength Bonus of 3, while an Elf with a Toughness of 24 would have a Toughness Bonus of 2.</li><br>
+        
+            <table> 
+                <caption>Table: Characteristics Generation</caption>
+                    <tbody>
+                        <tr>
+                            <th style="text-align: left;">Characteristics</th>
+                            <th>Dwarf</th>
+                            <th>Elf</th>
+                            <th>Hafling</th>
+                            <th>Human</th>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;">Weapon Skill (WS)</td>
+                            <td >30+2d10</td>
+                            <td >20+2d10</td>
+                            <td >10+2d10</td>
+                            <td >20+2d10</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;">Ballistic Skill (BS)</td>
+                            <td >20+2d10</td>
+                            <td >30+2d10</td>
+                            <td >30+2d10</td>
+                            <td >20+2d10</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;">Strength (S)</td>
+                            <td >20+2d10</td>
+                            <td >20+2d10</td>
+                            <td >10+2d10</td>
+                            <td >20+2d10</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;">Toughness (T)</td>
+                            <td >30+2d10</td>
+                            <td >20+2d10</td>
+                            <td >10+2d10</td>
+                            <td >20+2d10</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;">Agility (Ag)</td>
+                            <td >10+2d10</td>
+                            <td >30+2d10</td>
+                            <td >30+2d10</td>
+                            <td >20+2d10</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;">Intelligence (Int)</td>
+                            <td >20+2d10</td>
+                            <td >20+2d10</td>
+                            <td >20+2d10</td>
+                            <td >20+2d10</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;">Willpower (WP)</td>
+                            <td >20+2d10</td>
+                            <td >20+2d10</td>
+                            <td >20+2d10</td>
+                            <td >20+2d10</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;">Fellowship (Fel)</td>
+                            <td >10+2d10</td>
+                            <td >20+2d10</td>
+                            <td >30+2d10</td>
+                            <td >20+2d10</td>
+                        </tr>
+                    </tbody>
+                </table> <br>
+
+                <li style="margin-left: 20px; list-style-type: none;"><strong>4)</strong> Wounds and Fate Points are generated on their own charts, using a simple d10 roll. Find your race on Table 2-2: Starting Wounds, roll a d10, and then find the appropriate result. Repeat the process on Table 2-3: Starting Fate Points.</li><br><br>
+
+            <table>
+                <caption>Table: Wounds</caption>
+                    <tbody>
+                        <tr>
+                        <th style="text-align: left;">Roll 1d10</th>
+                        <th >Dwarf</th>
+                        <th >Elf</th>
+                        <th >Hafling</th>
+                        <th >Human</th>
+                        </tr>
+                        <tr>
+                        <td style="text-align: left;">1-3</td>
+                        <td >11</td>
+                        <td >9</td>
+                        <td >8</td>
+                        <td >10</td>
+                        </tr>
+                        <tr>
+                        <td style="text-align: left;">4-6</td>
+                        <td >12</td>
+                        <td >10</td>
+                        <td >9</td>
+                        <td >11</td>
+                        </tr>
+                        <tr>
+                        <td style="text-align: left;">7-9</td>
+                        <td >13</td>
+                        <td >11</td>
+                        <td >10</td>
+                        <td >12</td>
+                        </tr>
+                        <tr>
+                        <td style="text-align: left;">10</td>
+                        <td >14</td>
+                        <td >12</td>
+                        <td >11</td>
+                        <td >13</td>
+                        </tr>
+                    </tbody>
+            </table>
+
+        <br><br>
+
+            <table> <caption>Table: Fate Points</caption> 
+                <tbody>
+                    <tr>
+                    <th style="text-align: left;">Roll 1d10</th>
+                    <th>Dwarf</th>
+                    <th>Elf</th>
+                    <th>Hafling</th>
+                    <th>Human</th>
+                    </tr>
+                    <tr>
+                    <td style="text-align: left;">1-4</td>
+                    <td >1</td>
+                    <td >1</td>
+                    <td >2</td>
+                    <td >2</td>
+                    </tr>
+                    <tr>
+                    <td style="text-align: left;">5-7</td>
+                    <td >2</td>
+                    <td >2</td>
+                    <td >2</td>
+                    <td >3</td>
+                    </tr>
+                    <tr>
+                    <td style="text-align: left;">8-10</td>
+                    <td >3</td>
+                    <td >2</td>
+                    <td >3</td>
+                    <td >3</td>
+                    </tr>
+                </tbody>
+            </table><br>
+
+            <h2><p>Characteristics:</p></h2> <br> 
+
+            <div>
+            <h3>Main profile Characteristics:</h3> <br> 
+            <p style="margin-left: 20px;">   
+                <strong>Weapon Skill (WS):</strong> This Characteristic represents your character’s skill in hand-to-hand combat, both with weapons and without.<br>
+                <strong>Ballistic Skill (BS):</strong> This Characteristic represents your character’s skill with missile weapons, such as bows, crossbows, and pistols.<br>
+                <strong>Strength (S):</strong> This Characteristic represents your character’s muscle and brawn.<br>
+                <strong>Toughness (T):</strong>This Characteristic represents your character’s ability to withstand injury, disease, and poison.<br>
+                <strong>Agility (Ag):</strong> This Characteristic represents physical quickness, manual dexterity and reaction speed.<br>
+                <strong>Intelligence (Int):</strong> This Characteristic represents your character’s intellect, insight, and ability to reason.<br>
+                <strong>Willpower (WP):</strong> This Characteristic represents your character’s mental toughness and resolve.<br>
+                <strong>Fellowship (Fel):</strong> This Characteristic represents your character’s personal charisma and social skills. <br><br>
+            </p>
+            <h3>Secondary profile Characteristics:</h3> <br>
+            <p style="margin-left: 20px;">  
+                <strong>Attacks (A):</strong> The number indicates the maximum number of attacks you can make in 10 seconds (1 round).<br>
+                <strong>Wounds (W):</strong> It indicates how much damage your character can suffer before becoming critically injured.<br>
+                <strong>Strength Bonus (SB):</strong> This Characteristic, derived from Strength, is used when inflicting damage in melee combat.<br>
+                <strong>Toughness Bonus (TB):</strong> This Characteristic, derived from Toughness, is used to resist damage.<br>
+                <strong>Movement (M):</strong> This Characteristic represents your character’s base land speed.<br>
+                <strong>Magic (Mag):</strong> This Characteristic represents your character’s magical power.<br>
+                <strong>Insanity Points (IP):</strong> PCs begin with 0 Insanity Points but can gain them during play.<br>
+                <strong>Fate Points (FP):</strong> Fate Points can be used to avoid certain death. Your GM can tell you more about Fate Points.<br><br>
+            </p>    
+            </div>
+
+            <h2>Racial Features:</h2> <br>            
+            After choosing your ancestry, note down the skills and talents the ancestry posess. If you are a hafling or a human, then roll on the appropriate table<br><br>
+            <p style="margin-left: 20px;">  
+                <strong>Dwarf:</strong> <br>  
+                Skills: Common Knowledge (Dwarfs), Speak Language (Khazalid), Speak Language (Reikspiel), Trade (Miner, Smith, or Stoneworker) <br>
+                Talents: Dwarfcraft, Grudge-born Fury, Night Vision, Resistance to Magic, Stout-hearted, Sturdy<br><br>
+                <strong>Elf:</strong> <br>  
+                Skills: Common Knowledge (Elves), Speak Language (Eltharin), Speak Language (Reikspiel) <br>
+                Talents: Aethyric Attunement or Specialist Weapon Group(Longbow), Coolheaded or Savvy, Excellent Vision, Night Vision<br><br>
+                <strong>Hafling:</strong> <br>  
+                Skills: Academic Knowledge (Genealogy/Heraldry), Common Knowledge (Halflings), Gossip, Speak Language (Halfling), Speak Language (Reikspiel), Trade (Cook or Farmer) <br>
+                Talents: Night Vision, Resistance to Chaos, Specialist Weapon Group (Sling) and 1 random talent (roll once on Table: Talents to generate)<br><br>
+                <strong>Human:</strong> <br>  
+                Skills: Common Knowledge (the Empire), Gossip, Speak Language (Reikspiel) <br>
+                Talents: 2 random talents (roll twice on Table: Talents to generate).  
+            </p>
+
+            <br><br>
+
+        	<table> <caption>Table: Talents</caption> 
+                <tbody>	
+                    <th style="text-align: left;">Talent </th>	<th>Halfling Roll 1d100</th>	<th>Human Roll 1d100</th>	
+                    <tr>	<td style="text-align: left;">Acute Hearing </td>	<td >01-05</td>	<td >01-04</td>	</tr>
+                    <tr>	<td style="text-align: left;">Ambidextrous </td>	<td >06-10</td>	<td >05-09</td>	</tr>
+                    <tr>	<td style="text-align: left;">Coolheaded </td>	<td >11-15</td>	<td >10-13</td>	</tr>
+                    <tr>	<td style="text-align: left;">Excellent Vision </td>	<td >16-20 </td>	<td >14-18</td>	</tr>
+                    <tr>	<td style="text-align: left;">Fleet Footed </td>	<td >21-25 </td>	<td >19-22</td>	</tr>
+                    <tr>	<td style="text-align: left;">Hardy </td>	<td >26-29 </td>	<td >23-27</td>	</tr>
+                    <tr>	<td style="text-align: left;">Lightning Reflexes </td>	<td >30-33 </td>	<td >28-31</td>	</tr>
+                    <tr>	<td style="text-align: left;">Luck </td>	<td >34-38 </td>	<td >32-35</td>	</tr>
+                    <tr>	<td style="text-align: left;">Marksman </td>	<td >39-42 </td>	<td >36-40</td>	</tr>
+                    <tr>	<td style="text-align: left;">Mimic </td>	<td >43-47 </td>	<td >41-44</td>	</tr>
+                    <tr>	<td style="text-align: left;">Night Vision </td>	<td >- </td>	<td >45-49</td>	</tr>
+                    <tr>	<td style="text-align: left;">Resistance to Disease </td>	<td >48-51 </td>	<td >50-53</td>	</tr>
+                    <tr>	<td style="text-align: left;">Resistance to Magic </td>	<td >52-53 </td>	<td >54-57</td>	</tr>
+                    <tr>	<td style="text-align: left;">Resistance to Poison </td>	<td >54-57 </td>	<td >58-61</td>	</tr>
+                    <tr>	<td style="text-align: left;">Savvy </td>	<td >58-62 </td>	<td >62-66</td>	</tr>
+                    <tr>	<td style="text-align: left;">Sixth Sense </td>	<td >63-67 </td>	<td >67-71</td>	</tr>
+                    <tr>	<td style="text-align: left;">Strong-minded </td>	<td >68-72 </td>	<td >72-75</td>	</tr>
+                    <tr>	<td style="text-align: left;">Sturdy </td>	<td >73-77 </td>	<td >76-79</td>	</tr>
+                    <tr>	<td style="text-align: left;">Suave </td>	<td >78-82 </td>	<td >80-83</td>	</tr>
+                    <tr>	<td style="text-align: left;">Super Numerate </td>	<td >83-87 </td>	<td >84-87</td>	</tr>
+                    <tr>	<td style="text-align: left;">Very Resilient </td>	<td >88-91 </td>	<td >88-91</td>	</tr>
+                    <tr>	<td style="text-align: left;">Very Strong </td>	<td >92-95 </td>	<td >92-95</td>	</tr>
+                    <tr>	<td style="text-align: left;">Warrior Born </td>	<td >96-00 </td>	<td >96-00</td>	</tr>
+                </tbody>
+            </table>
+
+        <br><br>
+
+            <h2><p>Starting Career:</p></h2> <br>        
+
+            To determine your character’s former occupation, roll percentile dice and consult your chosen race’s column on Table: Starting Career.  
+            Once you’ve determined your character’s career, then copy down the listed skills and talents on your character sheet. 
+            In some instances, you may be given the choice of two different skills or talents. 
+            Pick the one you prefer in each case. Sometimes you have the opportunity to gain a skill you already have through your race. 
+            You are allowed to take such skills twice; this provides a +10% bonus when you use the skill.
+            After having rolled up your character you gain a free advance. An advance is either: <br>
+            <li style="margin-left: 20px; list-style-type: none;"><strong>&#8250;</strong> A 5% increase to a Characteristic on your Main Profile.</li>
+            <li style="margin-left: 20px; list-style-type: none;"><strong>&#8250;</strong> An increase of 1 to a Characteristic on your Secondary Profile.</li><br>
+
+            <table> <caption>Table: Career</caption>
+                <tbody>
+                    <th style="text-align: left;">Career</th><th>Dwarf</th><th>Elf</th><th>Halfling</th><th>Human</th></th>
+                    <tr><td  style="text-align: left;" >Agitator</td><td  >01-02</td><td  >-</td><td  >01-03</td><td  >01-02</td></tr>
+                    <tr><td  style="text-align: left;" >Apprentice-Wizard</td><td  >-</td><td  >01-07</td><td  >-</td><td  >03-04</td></tr>
+                    <tr><td  style="text-align: left;" >Bailiff</td><td  >-</td><td  >-</td><td  >-</td><td  >5</td></tr>
+                    <tr><td  style="text-align: left;" >Barber-Surgeon</td><td  >-</td><td  >-</td><td  >4</td><td  >6</td></tr>
+                    <tr><td  style="text-align: left;" >Boatman</td><td  >-</td><td  >-</td><td  >-</td><td  >07-08</td></tr>
+                    <tr><td  style="text-align: left;" >Bodyguard</td><td  >03-06</td><td  >-</td><td  >-</td><td  >09-10</td></tr>
+                    <tr><td  style="text-align: left;" >BonePicker</td><td  >-</td><td  >-</td><td  >5</td><td  >11-12</td></tr>
+                    <tr><td  style="text-align: left;" >BountyHunter</td><td  >-</td><td  >-</td><td  >06-07</td><td  >13-14</td></tr>
+                    <tr><td  style="text-align: left;" >Burgher</td><td  >07-10</td><td  >-</td><td  >08-09</td><td  >15-16</td></tr>
+                    <tr><td  style="text-align: left;" >Camp-Follower</td><td  >-</td><td  >-</td><td  >10-11</td><td  >17-18</td></tr>
+                    <tr><td  style="text-align: left;" >Charcoal-Burner</td><td  >-</td><td  >-</td><td  >12-14</td><td  >19-20</td></tr>
+                    <tr><td  style="text-align: left;" >Coachman</td><td  >11-12</td><td  >-</td><td  >-</td><td  >21-22</td></tr>
+                    <tr><td  style="text-align: left;" >Entertainer</td><td  >13-15</td><td  >08-12</td><td  >15-17</td><td  >23-24</td></tr>
+                    <tr><td  style="text-align: left;" >Envoy</td><td  >-</td><td  >13-19</td><td  >-</td><td  >-</td></tr>
+                    <tr><td  style="text-align: left;" >Estalian-Diestro</td><td  >-</td><td  >-</td><td  >-</td><td  >25</td></tr>
+                    <tr><td  style="text-align: left;" >Ferryman</td><td  >-</td><td  >-</td><td  >18</td><td  >26</td></tr>
+                    <tr><td  style="text-align: left;" >Fieldwarden</td><td  >-</td><td  >-</td><td  >19-22</td><td  >-</td></tr>
+                    <tr><td  style="text-align: left;" >Fisherman</td><td  >-</td><td  >-</td><td  >23</td><td  >27-28</td></tr>
+                    <tr><td  style="text-align: left;" >Grave-Robber</td><td  >-</td><td  >-</td><td  >24-26</td><td  >29-30</td></tr>
+                    <tr><td  style="text-align: left;" >Hedge-Wizard</td><td  >-</td><td  >-</td><td  >-</td><td  >31</td></tr>
+                    <tr><td  style="text-align: left;" >Hunter</td><td  >16-19</td><td  >20-27</td><td  >27-31</td><td  >32-33</td></tr>
+                    <tr><td  style="text-align: left;" >Initiate</td><td  >-</td><td  >-</td><td  >-</td><td  >34-35</td></tr>
+                    <tr><td  style="text-align: left;" >Jailer</td><td  >20-23</td><td  >-</td><td  >-</td><td  >36</td></tr>
+                    <tr><td  style="text-align: left;" >Kislevite-Kossar</td><td  >-</td><td  >-</td><td  >-</td><td  >37</td></tr>
+                    <tr><td  style="text-align: left;" >Kithband-Warrior</td><td  >-</td><td  >28-34</td><td  >-</td><td  >-</td></tr>
+                    <tr><td  style="text-align: left;" >Marine</td><td  >24</td><td  >-</td><td  >-</td><td  >38-39</td></tr>
+                    <tr><td  style="text-align: left;" >Mercenary</td><td  >25-30</td><td  >35-39</td><td  >32-35</td><td  >40-41</td></tr>
+                    <tr><td  style="text-align: left;" >Messenger</td><td  >-</td><td  >40-45</td><td  >36-40</td><td  >42-43</td></tr>
+                    <tr><td  style="text-align: left;" >Militiaman</td><td  >31-34</td><td  >-</td><td  >41-45</td><td  >44-45</td></tr>
+                    <tr><td  style="text-align: left;" >Miner</td><td  >35-40</td><td  >-</td><td  >-</td><td  >46-47</td></tr>
+                    <tr><td  style="text-align: left;" >Noble</td><td  >41-42</td><td  >-</td><td  >-</td><td  >48-49</td></tr>
+                    <tr><td  style="text-align: left;" >Norse-Berserker</td><td  >-</td><td  >-</td><td  >-</td><td  >50</td></tr>
+                    <tr><td  style="text-align: left;" >Outlaw</td><td  >43-45</td><td  >46-51</td><td  >46-48</td><td  >51-52</td></tr>
+                    <tr><td  style="text-align: left;" >Outrider</td><td  >-</td><td  >52-57</td><td  >-</td><td  >53-54</td></tr>
+                    <tr><td  style="text-align: left;" >Peasant</td><td  >-</td><td  >-</td><td  >49-54</td><td  >55-56</td></tr>
+                    <tr><td  style="text-align: left;" >Pit-Fighter</td><td  >46-50</td><td  >-</td><td  >-</td><td  >57-58</td></tr>
+                    <tr><td  style="text-align: left;" >Protagonist</td><td  >51-54</td><td  >-</td><td  >-</td><td  >59-60</td></tr>
+                    <tr><td  style="text-align: left;" >Rat-Catcher</td><td  >55-58</td><td  >-</td><td  >55</td><td  >61-62</td></tr>
+                    <tr><td  style="text-align: left;" >Roadwarden</td><td  >-</td><td  >-</td><td  >-</td><td  >63-64</td></tr>
+                    <tr><td  style="text-align: left;" >Rogue</td><td  >-</td><td  >58-63</td><td  >56-60</td><td  >65-66</td></tr>
+                    <tr><td  style="text-align: left;" >Runebearer</td><td  >59-63</td><td  >-</td><td  >-</td><td  >-</td></tr>
+                    <tr><td  style="text-align: left;" >Scribe</td><td  >64-65</td><td  >64-69</td><td  >-</td><td  >67-68</td></tr>
+                    <tr><td  style="text-align: left;" >Seaman</td><td  >66</td><td  >70-75</td><td  >-</td><td  >69-70</td></tr>
+                    <tr><td  style="text-align: left;" >Servant</td><td  >67-68</td><td  >-</td><td  >61-65</td><td  >71-72</td></tr>
+                    <tr><td  style="text-align: left;" >Shieldbreaker</td><td  >69-72</td><td  >-</td><td  >-</td><td  >-</td></tr>
+                    <tr><td  style="text-align: left;" >Smuggler</td><td  >73-75</td><td  >-</td><td  >66-68</td><td  >73-74</td></tr>
+                    <tr><td  style="text-align: left;" >Soldier</td><td  >76-79</td><td  >-</td><td  >69-70</td><td  >75-76</td></tr>
+                    <tr><td  style="text-align: left;" >Squire</td><td  >-</td><td  >-</td><td  >-</td><td  >77-78</td></tr>
+                    <tr><td  style="text-align: left;" >Student</td><td  >80-81</td><td  >76-80</td><td  >71-72</td><td  >79-80</td></tr>
+                    <tr><td  style="text-align: left;" >Thief</td><td  >82-84</td><td  >81-86</td><td  >73-78</td><td  >81-82</td></tr>
+                    <tr><td  style="text-align: left;" >Thug</td><td  >-</td><td  >-</td><td  >-</td><td  >83-84</td></tr>
+                    <tr><td  style="text-align: left;" >Toll-Keeper</td><td  >85-87</td><td  >-</td><td  >79-80</td><td  >85-86</td></tr>
+                    <tr><td  style="text-align: left;" >Tomb-Robber</td><td  >88-90</td><td  >-</td><td  >81-85</td><td  >87-88</td></tr>
+                    <tr><td  style="text-align: left;" >Tradesman</td><td  >91-94</td><td  >87-93</td><td  >86-90</td><td  >89-90</td></tr>
+                    <tr><td  style="text-align: left;" >Troll-Slayer</td><td  >95-98</td><td  >-</td><td  >-</td><td  >-</td></tr>
+                    <tr><td  style="text-align: left;" >Vagabond</td><td  >-</td><td  >94-00</td><td  >91-94</td><td  >91-92</td></tr>
+                    <tr><td  style="text-align: left;" >Valet</td><td  >-</td><td  >-</td><td  >95-96</td><td  >93-94</td></tr>
+                    <tr><td  style="text-align: left;" >Watchman</td><td  >99-00</td><td  >-</td><td  >97-00</td><td  >95-96</td></tr>
+                    <tr><td  style="text-align: left;" >Woodsman</td><td  >-</td><td  >-</td><td  >-</td><td  >97-98</td></tr>
+                    <tr><td  style="text-align: left;" >Zealot</td><td  >-</td><td  >-</td><td  >-</td><td  >99-00</td></tr>
+                    
+                </tbody>
+            </table>
+                     
+    </div>
+
+    <div class="five">
+        
+    </div>
+
+    <div class="four">
+        <ul class="footer" style="list-style: circle;">
+            <li> <a href="#top">Return to top</a></li>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="https://roll20.net/welcome" target="_blank">Roll20</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

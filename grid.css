@@ -1,0 +1,298 @@
+.parent {
+    display: grid;
+    grid-template-columns: 250px 1fr 100px;
+    grid-template-rows: 1fr 1fr 100px;
+    grid-template-areas:    "nav head head"
+                            "nav main side"
+                            "nav footer footer ";
+    width: 100vw;
+    height: 100vh;                       
+}
+
+.one {
+    grid-area: head;
+    background-color: #1e1e1e;
+    padding: 15px 40px 5px 40px;
+    color: whitesmoke;
+    font-size: 2.5em;
+}
+.two { /* sidebar */
+    grid-area: nav;
+    background-color: #1e1e1e;
+}
+.three { /* main body */
+    grid-area: main;
+    background-color: linear-gradient(180deg,#2b2c31,#4c4d52 20%) no-repeat fixed;
+    padding: 60px 140px 60px 140px;
+}
+    .three h3{color: orange}
+    .three a:link,.three a:visited{color: #1e1e1e}
+    .three a:hover{color: orange}
+.four {
+    grid-area: footer;
+    background-color: #1e1e1e;
+    list-style: circle;
+    font-size: 0.8em;
+    padding: 5px 40px 5px 40px;
+}
+.five {
+    grid-area: side;
+    background-color: #1e1e1e;
+}
+
+.children {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:    "fir sec";
+  align-items: top;
+  width: 1400px;
+  height: 100vh; 
+                        
+}
+
+.childOne {
+  grid-area: fir;
+  padding: 15px 20px 5px 20px;
+
+}
+.childTwo {
+  grid-area: sec;
+  padding: 15px 20px 5px 20px;
+
+}
+/*
+@media (max-width: 1050px) {
+  .children {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:    "fir" 
+                              "sec";
+  }
+}*/
+
+
+/* endrer størrelsen og utformingen på "sidebar". Endrer til Button-mode. Vurder å endre tekststørrense. Noen tabeller vil være vanskelige å lese*/
+@media only screen and (max-width: 1000px) { 
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 5px 100px;
+        grid-template-areas:    "nav"
+                                "main";
+        width: 100vw;
+        height: 100vh;                       
+    }
+    img {
+        display: none;
+    }
+    .one {
+        display: none;
+    }
+    .three { 
+        padding: 60px 10px 60px 10px;
+        box-sizing: content-box;
+    }
+    .four {
+        display: none;
+    }
+    .five{
+        display: none;
+    }
+    .btn{
+        position: absolute;
+        top: 15px;
+        left: 45px;
+        height: 45px;
+        width: 45px;
+        text-align: center;
+        background: #1b1b1b;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: left 0.4s ease;
+    }
+      .btn.click{
+        left: 260px;
+    }
+      .btn span{
+        color: white;
+        font-size: 28px;
+        line-height: 45px;
+    }
+      .btn.click span:before{
+        content: '\f00d';
+    }
+      .sidebar{
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        left: -250px;
+        background: #1b1b1b;
+        transition: left 0.4s ease;
+    }
+      .sidebar.show{
+        left: 0px;
+    }
+      .sidebar .text{
+        color: white;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 65px;
+        text-align: center;
+        background: #1e1e1e;
+        letter-spacing: 1px;
+    }
+      nav ul{
+        background: #1e1e1e;
+        height: 100%;
+        width: 100%;
+        list-style: none;
+    }
+      nav ul li{
+        line-height: 60px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+      nav ul li:last-child{
+        border-bottom: 1px solid rgba(180, 4, 4, 0.05);
+    }
+      nav ul li a{
+        position: relative;
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 1.1em;
+        padding-left: 20px;
+        font-weight: 500;
+        display: block;
+        width: 100%;
+        border-left: 3px solid transparent;
+      }
+      nav ul li.active a{
+        color: orange;
+        background: #1e1e1e;
+        border-left-color: orange;
+      }
+      nav ul li a:hover{
+        background: #1e1e1e;
+      }
+      nav ul ul{
+        position: static;
+        display: none;
+      }
+      nav ul .feat-show.show{
+        display: block;
+      }
+      nav ul .serv-show.show1{
+        display: block;
+      }
+      nav ul ul li{
+        line-height: 35px;
+        border-top: none;
+      }
+      nav ul ul li a{
+        font-size: 0.9em;
+        color: #e6e6e6;
+        padding-left: 40px;
+      }
+      nav ul li.active ul li a{
+        color: whitesmoke;
+        background: #1b1b1b;
+        border-left-color: transparent;
+      }
+      nav ul ul li a:hover{
+        color: orange!important;
+        background: #1e1e1e!important;
+      }
+      nav ul li a span{
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: 22px;
+        transition: transform 0.4s;
+      }
+      nav ul li a span.rotate{
+        transform: translateY(-50%) rotate(-180deg);
+      }
+      .content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #202020;
+        z-index: -1;
+        text-align: center;
+      }
+      .content .header{
+        font-size: 45px;
+        font-weight: 600;
+      }
+      .content p{
+        font-size: 30px;
+        font-weight: 500;
+      }
+      
+}      
+
+
+
+
+
+
+
+
+
+/*.cont_main {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    display: grid;
+    grid-template-columns: 250px 3fr 1fr;
+    grid-template-rows: 100px 1fr 100px; 
+    box-sizing: border-box;
+    background-color: rgb(78, 80, 74);
+}
+.cont_head {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: #1e1e1e;
+    color: whitesmoke;
+    padding: 20px;
+    padding-left: 60px;
+}
+.cont_center {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: rgba(229,229,229,255);
+	line-height: 20px;
+	font-family: Arial;
+	font-weight: lighter;
+    font-size: 18px;
+	color: rgba(43,44,49,255);
+    padding: 20px;
+}
+.cont_foot {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background-color: #1e1e1e;
+    color: whitesmoke;
+    padding: 5px 20px 5px 20px;
+    font-size: 10px;
+}
+.cont_left {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: #1e1e1e;
+}
+.cont_right {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding-left: 250px;
+    background-color: #1e1e1e;
+}

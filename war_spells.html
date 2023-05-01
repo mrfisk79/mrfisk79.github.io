@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+        <meta charset="utf-8">
+        <title>Sidebar Menu with sub-menu | CodingNepal</title>
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="sidebar.css">
+        <link rel="stylesheet" href="grid.css">
+        <link rel="stylesheet" href="dropdown.js">
+        <link rel="stylesheet" href="active.js">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="parent">
+
+    <div class="one">Warhammer 2. edition - Spells
+
+</div>
+
+    <div class="two">
+        <div class="btn">
+                <span class="fas fa-arrow-down"></span>
+        </div>
+            <div class="cont_center">
+                <nav class="sidebar">
+                    <div class="text">
+                       <img class="text" src="../channel-picture/dagon.png" alt="background-header" 
+                        style="width:250px; transform: scaleX(-1);">
+                    </div>
+                        <ul>
+                            <li class="active"><a href="index.html">Metveit & Keepers</a></li>
+                            <li>
+                            <a href="#" class="feat-btn">Warhammer
+                            <span class="fas fa-caret-down first"></span>
+                            </a>
+                                <ul class="feat-show">
+                                    <li><a href="war_chagen.html">Character Generation</a></li>
+                                    <li><a href="war_ancestries.html">Ancestries</a></li>
+                                    <li><a href="war_bascar.html">Basic Careers</a></li>
+                                    <li><a href="war_advcar.html">Advanced Careers</a></li>
+                                    <li><a href="war_talents.html">Talents</a></li>
+                                    <li><a href="war_skills.html">Skills</a></li>
+                                    <li><a href="war_spells.html">Spells</a></li>
+                                    <li><a href="war_equip.html">Equipment</a></li>
+                                    <li><a href="war_rules.html">Rules</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                            <a href="#" class="serv-btn">Conan 2d20
+                            <span class="fas fa-caret-down second"></span>
+                            </a>
+                            <ul class="serv-show">
+                                <li><a href="con_chagen">Character Generation</a></li>
+                                <li><a href="con_home">Homeland</a></li>
+                                <li><a href="con_arche">Archetypes</a></li>
+                                <li><a href="con_talent">Talents</a></li>
+                                <li><a href="con_spell">Spells</a></li>
+                                <li><a href="con_equip">Equipment</a></li>
+                                <li><a href="con_rule">Rules</a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#" class="shor-btn">Symbaroum 5e
+                                <span class="fas fa-caret-down third"></span>
+                                </a>
+                                <ul class="shor-show">
+                                    <li><a href="sym_chagen">Character Generation </a></li>
+                                    <li><a href="sym_ancest">Ancestries </a></li>
+                                    <li><!-- Slett dette om det er problemer med tredje undermeny -->
+                                        <a href="#" class="thir-btn">Classes
+                                        <span class="fas fa-caret-down fourth"></span>
+                                        </a>
+                                            <ul class="thir-show">
+                                                <li><a href="sym_capt.html">Captain</a></li>
+                                                <li><a href="sym_hunt.html">Hunter</a></li>
+                                                <li><a href="sym_myst.html">Mystic</a></li>
+                                                <li><a href="sym_scho.html">Scholar</a></li>
+                                                <li><a href="sym_scou.html">Scoundrel</a></li>
+                                                <li><a href="sym_warr.html">Warrior</a></li>
+                                            </ul>
+                                    </li>
+                                    <li><a href="sym_feat">Feats </a></li>
+                                    <li><a href="sym_skill">Skills </a></li>
+                                    <li><a href="sym_spell">Spells </a></li>
+                                    <li><a href="sym_equip">Equipment </a></li>
+                                    <li><a href="sym_rule">Rules </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="house_rule">House Rules</a></li>
+                            <li><a href="homebrew">Homebrew</a></li>
+                            <li><a href="campaigns">Campaigns</a></li>
+                        </ul> 
+                </nav>
+                <script src="dropdown.js"></script>
+            </div>    
+    </div>
+
+    <div class="three">
+        
+        <h1>Spells </h1>
+           
+        <br><br> <h2>Learning Magic:</h2>  <br> 
+        Before you can start casting spells, you must meet four criteria:
+            <li>You must have a Magic Characteristic of 1 or more.</li>
+            <li>You must know the Channelling skill.</li>
+            <li>You must speak an Arcane Language.</li>
+            <li>You must have access to spells through the Petty Magic, Arcane  Lore, Dark Lore or Divine Lore talents. </li> <br>
+        The quickest way to meet all these criteria is to get into a spellcasting career, such as Priest or Wizard. Only these careers have an increase to the Magic Characteristic on their Advance Scheme.
+
+        <br><br> <h2>Casting Spells:</h2>  <br> 
+        When you want to cast a spell, you must draw upon the power of the Winds of Magic and focus it into your desired effect (the chosen spell). 
+        To do this take the cast action and then roll a number of d10s equal to your Magic Characteristic. Now total the dice. 
+        This is your Casting Roll. If the result is equal to or greater than the spell’s Casting Number, it is cast successfully. 
+        You may roll a number of d10s less than your Magic Characteristic if you want to (and indeed, it’s often a good idea). 
+        Casting is often an extended action, which means you must continue casting a spell until it’s finished. 
+        As per the normal rules, you may abort the spell part way through, but this means all actions taken thus far are wasted.<br><br>
+
+        <h3 class="header3"><p>Channeling and Ingredients:</p></h3> <br>
+        There are two ways you can increase your chances of casting a spell. First, you can make a Channelling Skill Test right before the spell is cast. 
+        Doing so is a half action. Channelling helps you focus the energy of the Winds of Magic. 
+        If the test is successful, you add a bonus equal to your Magic Characteristic to your Casting Roll. 
+        If you use Channelling, casting a spell must be your next action. <br><br>Your other option is to use special ingredients. 
+        If you have the correct ingredient, it provides a bonus of +1 to +3 to your Casting Roll. 
+        An ingredient is only good for one casting of a spell and you must decide to use it before you make your Casting Roll. 
+        The availability of ingredients can vary depending on your location and the nature of the item, 
+        but generally speaking ingredients that provide a +1 bonus are Common, a +2 bonus are Scarce, and a +3 bonus are Rare. 
+        The more esoteric ingredients can’t be found in any shop and must be acquired personally, often at great risk.<br><br>
+
+        <h3 class="header3"><p>Automatic Failure:</p></h3> <br>
+        When magic is involved, nothing is certain. Regardless of a spell’s Casting Number,
+        if all the d10s of your Casting Roll come up 1, the spell fails. 
+        In addition, you must take a Will Power Test or gain an Insanity Point as the uncontrolled magical energy sears your mind. 
+        Because they only roll 1d10 to begin with, novice spellcasters are in greater danger than their more experienced elders.<br><br>
+
+        <h3 class="header3"><p>Curse or Wrath of God:</p></h3> <br>
+        Magic can be unpredictable. The more power you use to cast a spell, the more likely it is that something unexpected will happen. 
+        If you are a spellcaster, this takes effect when you roll doubles, triples, or quadruples on your Casting Roll. 
+        The more d10s you roll, the more deadly the effect becomes. 
+        <li>If you roll doubles, roll percentile dice and consult <em>Curse or Wrath of God table</em>. </li>
+        <li>If you roll triples, roll percentile dice and consult <em>Curse or Wrath of God table</em>.</li>
+        <li>If you roll quadruples, roll percentile dice and consult <em>Curse or Wrath of God table</em>. </li>
+        <li>If you roll multiple matches on one Casting Roll, there can be more than one manifestation.</li> <br>
+       
+        <table class="critical"> 
+        <caption>Curse or Wrath of God table:</caption>	
+        <tbody>
+            <th>D100 Roll </th>	<th>Minor</th>	<th>Major</th>	<th>Catastrophic</th>	
+            <tr>	<td>01-10</td>	<td>Witchery: Within 10 yards (5 squares) of you, milk curdles, wine goes sour, and food spoils.</td>	<td>Witch Eyes: Your pupils turn bright red. They revert to their original colour at dawn the following day.</td>	<td>Wild Magic: You lose control of the magic as you cast your spell. Everyone within 30 yards (15 squares), including you, loses 1 Wound regardless of Toughness Bonus or armour.</td>	</tr>
+            <tr>	<td>10-20</td>	<td>Rupture: Your nose begins to bleed and continues until you make a successful Toughness Test. You can test once per round.</td>	<td>Silenced: You lose your voice for 1d10 rounds.</td>	<td>The Withering Eye: Chaos energy wracks your body, debilitating your constitution. Your Toughness Characteristic is reduced by 20% for 1d10 hours.</td>	</tr>
+            <tr>	<td>21-30 </td>	<td>Breath of Chaos: A cold and unnatural wind blows through the area.</td>	<td>Overload: You are overwhelmed by magical energy and are stunned for 1 round.</td>	<td>Tzeentch’s Lash: Magic power overwhelms you, knocking you out for 1d10 minutes.</td>	</tr>
+            <tr>	<td>31-40 </td>	<td>Horripilation: Your hair stands on end for 1d10 rounds.</td>	<td>Craven Familiar: A Daemon Imp (see Chapter 11: Common Creatures and NPCs) appears from the Aethyr and attacks you next round.</td>	<td>Aethyric Assault: The Winds of Magic lash out at you. You suffer a Critical Hit to a random location. Roll 1d10 to determine the Critical Value.</td>	</tr>
+            <tr>	<td>41-50 </td>	<td>Wyrdlight: You glow with an eerie light for 1d10 rounds.</td>	<td>Chaos Foreseen: You get a glimpse of the Realm of Chaos and gain 1 Insanity Point. Any time after this event, you can spend 200 xp and gain the Dark Lore (Chaos) talent.</td>	<td>Heretical Vision: A Daemon Prince shows you a vision of Chaos. You gain 1d10 Insanity Points. Any time after this event, you can spend 100 xp and gain the Dark Lore (Chaos) talent.</td>	</tr>
+            <tr>	<td>51-60 </td>	<td>Unnatural Aura: Animals within 10 yards (5 squares) of you get spooked, and unless controlled with an Animal Training Test, flee the scene.</td>	<td>Aethyric Attack: Magical energy burns through you, causing you to lose 1d10 Wounds regardless of Toughness Bonus or armour.</td>	<td>Mindeaten: Your ability to use magic is burned out of you. Your Magic Characteristic is reduced to 0. For each full 24 hours that passes, it increases by 1 until it returns to full strength.</td>	</tr>
+            <tr>	<td>61-70 </td>	<td>Haunted: Ghostly voices fill the air for the duration of your spell.</td>	<td>Enfeeblement: Chaos energy wracks your body, debilitating your constitution. Your Toughness Characteristic is reduced by 10% for 1d10 minutes.</td>	<td>Uninvited Company: You are attacked by a number of lesser Daemons equal to your Magic Characteristic (see Chapter 11: Common Creatures and NPCs). They appear from the Aethyr within 12 yards (6 squares) of you.</td>	</tr>
+            <tr>	<td>71-80 </td>	<td>Aethyric Shock: The magical energy coursing through you causes you to lose 1 Wound regardless of Toughness Bonus or armour.</td>	<td>Mindnumb: You channel too much magical energy. Your Magic Characteristic is reduced by 1 for 24 hours.</td>	<td>Daemonic Contract: You suffer 1d10 wounds (regardless of Toughness Bonus and armour) as a two inch Chaos rune burns its way onto a random part of your body. Should you ever collect 13 of these, they will spell out a contract that signs your soul away to a Ruinous Power (GM’s discretion). Removal of the branded skin will make no difference to the contract.</td>	</tr>
+            <tr>	<td>81-90 </td>	<td>Mental Block: You channel too much magical energy. Your Magic Characteristic is reduced by 1 for 1d10 minutes.</td>	<td>Daemonic Possession: You are possessed by a Daemonic entity for one minute. During that time, the GM controls all your actions and when you take control of your body again, you’ll have no memory of what you just did.</td>	<td>Called to the Void: You are sucked into the Realm of Chaos and are forever lost. Unless you have a Fate Point to spend, it’s time to roll up a new character.</td>	</tr>
+            <tr>	<td>91-95 </td>	<td>Whimsy: The GM can choose any result from this chart or make up a comparable minor effect.</td>	<td>Perverse Delight: The GM can choose any result from this chart or make up a comparable major effect.</td>	<td>Dark Inspiration: The GM can choose any result from this chart or make up a comparable catastrophic effect.</td>	</tr>
+            <tr>	<td>96-00 </td>	<td>Unlucky!: Roll on Table 7-3: Major Chaos Manifestation instead.</td>	<td>Trick of Fate: Roll on Table 7-4: Catastrophic Chaos Manifestation instead.</td>	<td>Dark Inspiration: The GM can choose any result from this chart or make up a comparable catastrophic effect.</td>	</tr>
+        </tbody></table> <br><br>
+
+        <h3 class="header3"><p>Spellcasting limits:</p></h3> <br>
+        You must be able to speak to cast spells. It is through invocations in the various arcane languages that the Winds of Magic can be manipulated. 
+        If you cannot speak for any reason (you’re gagged, for example) you cannot cast spells. Spellcasting also requires a high degree of concentration. 
+        This is not a problem for spells that take a full or half action to cast, since you can cast those on your turn without interruption. 
+        Spells that require extended actions, however, take so long to cast that you become vulnerable to outside interference. 
+        If anything breaks your concentration—most commonly when you take damage or are the target of a hostile spell—you must 
+        make a successful Channelling Test or be forced to abort the spellcasting action. 
+        As always, the GM should modify this depending on the circumstances.<br><br>
+        
+        <h3 class="header3"><p>Magic Missiles:</p></h3> <br>
+        magIC mIssIles Certain spells, like fire ball, are classified as magic missiles. 
+        This means that (like normal ranged attacks) you must have line of sight to your target. 
+        If you cannot see your target, you cannot use a magic missile spell against him. 
+        Unless stated otherwise, magic missile spells automatically hit their targets if cast successfully.<br><br>
+
+        <h3 class="header3"><p>Protective Circles:</p></h3> <br>
+        Arcane spellcasters can minimize the risk of Curse by creating a magical circle that helps control Aethyric energy. 
+        The materials required to make a protective circle are Scarce and cost a number of gold crowns equal to the Casting Number of the chosen spell. 
+        A protective circle takes 1 minute and a successful Channelling Test to create and is good for one casting (successful or not). 
+        If you cast a spell from within a properly created protective circle, you may re-roll one d10 of your Casting Roll. 
+        The results of the re-roll are final.<br><br>
+
+        <h3 class="header3"><p>Spellcasters and armor:</p></h3> <br>
+        Armour interferes with a spellcaster’s ability to channel magical energy. 
+        While it is possible to cast spells while wearing armour or using a shield, it makes the process more difficult. 
+        The effects of armour and shields on spellcasting are as follows:
+        <li>If you are wearing light armour (Basic) or only leather armour (Advanced), you suffer a –1 penalty on all Casting Rolls.</li>
+        <li>If you are wearing medium armour (Basic) or any type of mail (Advanced), you suffer a –3 penalty on all Casting Rolls.</li>
+        <li>If you are wearing heavy armour (Basic) or any type of plate or helm (Advanced), you suffer a –5 penalty on all Casting Rolls.</li>
+        <li>If you are equipped (i.e. actively using) with a shield you suffer a –1 penalty on all Casting Rolls. If you have both shield and armour, you suffer both penalties.</li> <br><br>
+
+        <h3 class="header3"><p>Spells and Hit Locations:</p></h3> <br>
+        Some spells, such as fire ball and shadow knives, inflict damage directly. 
+        This is calculated just like normal missile damage, (1d10 + Damage) minus (Toughness Bonus + Armour Points), 
+        unless the spell specifically states otherwise (some spells, for example, ignore armour). 
+        If you are using the advanced armour system or a Critical Hit is inflicted, you should roll percentile dice to determine the hit location. 
+        The Ulric’s Fury rule applies to damage from spells as well. 
+        However, rather than make a Weapon Skill Test to determine if extra damage is caused, a spellcaster makes a Will Power Test instead.<br><br>
+
+        <h3 class="header3"><p>Touch Spells:</p></h3> <br>
+        Some spells require you to touch the subject. In non-combat situations, adjudicating this is easy enough. 
+        In the chaos of melee, however, touching your opponent is more difficult. 
+        Whenever you want to cast a spell requiring touch, you must make a successful Weapon Skill Test. 
+        This is considered part of the spell casting action, so does not require you to make a separate attack action. 
+        It is possible to dodge and parry touch spells, but at a –20% penalty.<br><br>
+
+        <br><br> <h2>Spell list:</h2>  <br> <br>
+
+        <table class="table-sortable">  
+            <caption>Spell list (press header to sort):</caption>
+            <thead align="left"><tr>	<th>Name </th>	
+                <th>Lore </th>	
+                <th>Type </th>	
+                <th>Casting number </th>	
+                <th>EXP cost </th>	
+                <th>Casting time </th>	
+                <th>Ingredients </th>	
+                <th >Description </th>	</tr> </thead>
+            <tbody style="font-size: 12px";>
+            <tr>	<td>Acceptance Of Fate</td>	
+                <td>Death</td>	
+                <td>3</td>	
+                <td>14</td>	
+                <td>140</td>	
+                <td>1 full action and 1 half action</td>	
+                <td>A coffin nail (+2)</td>	
+                <td>This spell causes your allies to temporarily put aside their fear of death. For 1 minute (6 rounds), you and all your allies within 12 yards (6 squares) count as having the Fearless talent.</td>	</tr>
+            <tr>	<td>Aethyric Armour</td>	
+                <td>Lesser</td>	
+                <td>2</td>	
+                <td>5</td>	
+                <td>50</td>	
+                <td>Half action</td>	
+                <td>A link of chainmail (+1)</td>	
+                <td>You weave the Winds of Magic around you, creating an invisible barrier that helps protect you from harm. You gain a number of Armour Points equal to your Magic Characteristic on all locations for one minute (6 rounds). You cannot cast this spell if you are wearing any normal armour. Should you don armour while the spell is in effect, the spell ends immediately.</td>	</tr>
+            <tr>	<td>Armour Of Lead</td>	
+                <td>Metal</td>	
+                <td>3</td>	
+                <td>14</td>	
+                <td>140</td>	
+                <td>Full action</td>	
+                <td>A miniature helmet sculpted of lead (+2)</td>	
+                <td>You cause the armour of a group of enemies within 48 yards (24 squares) to have the weight of lead. Use the large template. Those affected suffer a –10% penalty to their Weapon Skill, Ballistic Skill, and Agility and a –1 penalty to their Movement Characteristic. Armour of lead lasts for 1 minute (6 rounds).</td>	</tr>
+            <tr>	<td>Banish</td>	
+                <td>Light</td>	
+                <td>3</td>	
+                <td>13</td>	
+                <td>130</td>	
+                <td>Full action</td>	
+                <td>An oak wand (+2)</td>	
+                <td>You wrap a Daemon within 24 yards (12 squares) of you in the tendrils of Hysh, using the pureness of light to banish it back to the Realm of Chaos. If the spell is cast successfully, the banishment is resolved as an Opposed Will Power Test. If you win, the Daemon disappears. If you lose, it remains. In the case of a stalemate, the two of you remain locked in mental combat. Neither of you can take any other actions (including dodge) while the struggle continues. Make Opposed Will Power Tests on each of your turns until one of you is victorious. Banish can also be used to exorcise the possessed.</td>	</tr>
+            <tr>	<td>Banish Undead</td>	
+                <td>Necromancy</td>	
+                <td>3</td>	
+                <td>26</td>	
+                <td>260</td>	
+                <td>Full action</td>	
+                <td>A vial of blessed water (+3)</td>	
+                <td>You create a magical vortex within 48 yards (24 squares) that sucks energy from the Undead. Use the large template. Those Undead affected take a Damage 5 hit, unless they are Skeletons or Zombies, which are instantly destroyed instead.</td>	</tr>
+            <tr>	<td>Bewilder</td>	
+                <td>Shadow</td>	
+                <td>3</td>	
+                <td>8</td>	
+                <td>80</td>	
+                <td>Half action</td>	
+                <td>A splash of ale (+1)</td>	
+                <td>You can cast this spell on any one character or creature within 24 yards (12 squares). The victim must make a successful Will Power Test or become bewildered for a number of rounds equal to your Magic Characteristic. The bewildered character must roll percentile dice and consult the following chart to determine what he’ll do until the spell wears off:
+                    <br>01-20 Befuddled: You can only take a half action each round.
+                    <br>21-40 Wander: You run in a random direction, as determined by the GM.
+                    <br>41-60 Attack!: Attack the nearest character with an all out attack, be it friend or foe. If the nearest character is out of reach, you must move towards him as fast as possible and engage him in meleecombat (making a charge attack if possible).
+                    <br>61-80 Do nothing: The bewildered character cannot take any actions or dodge.
+                    <br>81-00 Curl into a ball: The bewildered character is considered helpless.</td>	</tr>
+            <tr>	<td>Blessed Weapon</td>	
+                <td>Lesser</td>	
+                <td>2</td>	
+                <td>6</td>	
+                <td>60</td>	
+                <td>Half action</td>	
+                <td>A dab of blessed water (+1)</td>	
+                <td>You can enchant one melee or thrown weapon or up to 5 shots of missile ammunition (arrows, bolts, bullets, etc.). These items gain no bonuses of any kind, but they do count as magical, making them quite useful against ghosts, spirits, and certain other monsters. Blessed weapon lasts for 1 hour.</td>	</tr>
+            <tr>	<td>Blessing Of Courage</td>	
+                <td>Petty (D)</td>	
+                <td>1</td>	
+                <td>3</td>	
+                <td>30</td>	
+                <td>Half action</td>	
+                <td>A tuft of dog hair (+1)</td>	
+                <td>Your inspirational words put fire in the heart of an ally. Any one frightened or terrified character within 24 yards (12 squares) immediately regains his composure and may once again act as normal.</td>	</tr>
+            <tr>	<td>Blessing Of Fortitude</td>	
+                <td>Petty (D)</td>	
+                <td>1</td>	
+                <td>5</td>	
+                <td>50</td>	
+                <td>Half action</td>	
+                <td>A piece of turtle shell (+1)</td>	
+                <td>The touched character receives a +5% bonus to Toughness and Will Power. The spell lasts 1 minute (6 rounds) and you can only benefit from one blessing of fortitude at a time. Blessing of fortitude a touch spell and you can cast it on yourself.</td>	</tr>
+            <tr>	<td>Blessing Of Healing</td>	
+                <td>Petty (D)</td>	
+                <td>1</td>	
+                <td>5</td>	
+                <td>50</td>	
+                <td>Half action</td>	
+                <td>A sprig of holly (+1)</td>	
+                <td>Your touch heals an injured character of 1 Wound. A wounded character can only receive such healing once during or after each battle or encounter in which Wounds are lost. This is a touch spell and you can cast this spell on yourself.</td>	</tr>
+            <tr>	<td>Blessing Of Might</td>	
+                <td>Petty (D)</td>	
+                <td>1</td>	
+                <td>6</td>	
+                <td>60</td>	
+                <td>Half action</td>	
+                <td>An iron nail (+1)</td>	
+                <td>The touched character receives a +5% bonus to Weapon Skill and Strength. The spell lasts 1 minute (6 rounds) and you can only benefit from one blessing of might at a time. This is a touch spell and you can cast it on yourself.</td>	</tr>
+            <tr>	<td>Blessing Of Protection</td>	
+                <td>Petty (D)</td>	
+                <td>1</td>	
+                <td>7</td>	
+                <td>70</td>	
+                <td>Full action</td>	
+                <td>A small token with your deity’s symbol (+1)</td>	
+                <td>You receive the protection of your patron deity. Anyone who tries to attack you must make a successful Routine (+10%) Will Power Test. Those that fail must pick another target or take a different action. The spell lasts 1 minute (6 rounds) and you can only benefit from one blessing of protection at a time.</td>	</tr>
+            <tr>	<td>Blessing Of Speed</td>	
+                <td>Petty (D)</td>	
+                <td>1</td>	
+                <td>4</td>	
+                <td>40</td>	
+                <td>Half action</td>	
+                <td>A snake scale (+1)</td>	
+                <td>The touched character receives a +5% bonus to Agility and a +1 bonus to Movement. The spell lasts 1 minute (6 rounds) and you can only benefit from one blessing of speed at a time. This is a touch spell and you can cast it on yourself.</td>	</tr>
+            <tr>	<td>Blinding Light</td>	
+                <td>Light</td>	
+                <td>3</td>	
+                <td>24</td>	
+                <td>240</td>	
+                <td>Full action</td>	
+                <td>A polished mithril disc (+3)</td>	
+                <td>You create an explosion of shimmering light within 48 yards (24 squares) that blinds those in the area. Use the large template. Those affected must make an Agility Test. On a failed test, victims are blinded, which reduces their Agility, Movement, Weapon Skill by half (rounded down) and their Ballistic Skill to 0. Furthermore, they automatically fail all Perception Tests involving sight. Those that pass the test suffer the effects of the dazzling brightness spell instead. In either case, the spell’s effects last for 1d10 rounds.</td>	</tr>
+            <tr>	<td>Boon Of Chaos</td>	
+                <td>Chaos</td>	
+                <td>3</td>	
+                <td>7</td>	
+                <td>70</td>	
+                <td>Half action</td>	
+                <td>A small mask (+1)</td>	
+                <td>You cause any one character within 24 yards (12 squares) to have a hellish vision. The target is stunned for 1 round unless a successful Will Power Test is made. Once the character recovers from being stunned, he must make a second Will Power Test or gain 1 Insanity Point.</td>	</tr>
+            <tr>	<td>Breathe Fire</td>	
+                <td>Fire</td>	
+                <td>3</td>	
+                <td>25</td>	
+                <td>250</td>	
+                <td>Full action</td>	
+                <td>A dragon’s scale (+3)</td>	
+                <td>You breathe out a rolling gout of flame, akin to that of the dragons of legend. Use the cone template. Those affected suffer a hit with Damage 8. A successful Will Power Test such pyromantic exhalations, will assume that you are some form of Chaos Daemon and react appropriately.</td>	</tr>
+            <tr>	<td>Burning Blood</td>	
+                <td>Chaos</td>	
+                <td>3</td>	
+                <td>13</td>	
+                <td>130</td>	
+                <td>Half action</td>	
+                <td>A vial of Daemon blood (+2)</td>	
+                <td>You spit blood that burns like acid at any one target within 24 yards (12 squares). The target suffers a number of Damage 4 hits equal to your Magic Characteristic. This is a magic missile.</td>	</tr>
+            <tr>	<td>Call Of Vanhel</td>	
+                <td>Necromancy</td>	
+                <td>3</td>	
+                <td>15</td>	
+                <td>150</td>	
+                <td>Full action</td>	
+                <td>A small silver trumpet (+2)</td>	
+                <td>You energize undead under your control. 1d10 Skeletons, Wights, or Zombies can immediately take a move or standard attack action, even though it’s not their turn. These count as free actions and do not affect the number of actions the affected Undead can take this round.</td>	</tr>
+            <tr>	<td>Calm The Wild Beast</td>	
+                <td>Beasts</td>	
+                <td>3</td>	
+                <td>5</td>	
+                <td>50</td>	
+                <td>Half action</td>	
+                <td>A lump of sugar (+1)</td>	
+                <td>Your soothing and hypnotic voice calms one animal within 48 yards (24 squares) unless it makes a successful Will Power Test. You may approach the beast and touch it without fear; it remains placid. If a mount, you may ride it with a +10% bonus to any Ride Skill Tests you are required to make. The animal remains friendly towards you for a number of hours equal to your Magic Characteristic unless you unless you attack it, in which case the enchantment is broken immediately.</td>	</tr>
+            <tr>	<td>Cauterize</td>	
+                <td>Fire</td>	
+                <td>3</td>	
+                <td>4</td>	
+                <td>40</td>	
+                <td>Half action</td>	
+                <td>A piece of charcoal (+1)</td>	
+                <td>You can lay your hands on an open wound and sear it shut. While this does not restore any wounds to the subject, it does count as medical attention and can thus save the critically injured from certain death. At the GM’s discretion, this spell can be used for similar tasks, such as branding. Your hands must be bare to cast this spell successfully.</td>	</tr>
+            <tr>	<td>Claws Of Fury</td>	
+                <td>Beasts</td>	
+                <td>3</td>	
+                <td>8</td>	
+                <td>80</td>	
+                <td>Half action</td>	
+                <td>A cat’s claw (+1)</td>	
+                <td>Your fingernails turn into razor sharp claws as you take on a feral aspect. You gain +1 to your Attacks Characteristic as hand weapons with the Fast Quality. Claws of fury lasts a number of minutes equal to your Magic Characteristic. You cannot wield a weapon while claws of fury is in effect.</td>	</tr>
+            <tr>	<td>Cloak Activity</td>	
+                <td>Shadow</td>	
+                <td>3</td>	
+                <td>12</td>	
+                <td>120</td>	
+                <td>Half action</td>	
+                <td>A sketch of your illusory action (+2)</td>	
+                <td>This spell allows you to perform any act while appearing to do something completely different. You appear to be exactly where you are, but engaged in a different activity. For example, you can appear to all eyes to be reading a book when you are actually punching someone in the face. If your action affects someone else (an attack, spell, picking a pocket, etc.), the victim is allowed an Intelligence Test to see through the illusion. Cloak activity lasts for 1d10 rounds. If cast successfully, cloak activity also disguises the act of casting the spell.</td>	</tr>
+            <tr>	<td>Conflagration Of Doom</td>	
+                <td>Fire</td>	
+                <td>3</td>	
+                <td>31</td>	
+                <td>310</td>	
+                <td>1 full action and 1 half action</td>	
+                <td>A dragon’s tooth (+3)</td>	
+                <td>This is the most destructive spell in the Bright Wizard’s arsenal. When you call down a conflagration of doom, a fiery inferno engulfs a target area within 48 yards (24 squares). Use the large template. Those affected take a number of Damage 4 hits equal to your Magic Characteristic. Any that remain in the area after their next turn must make a successful Will Power Test each round or take damage again. The spell lasts until nothing in the area is left alive. As this is such a violent and powerful conjuration, all Wizards within a 5-mile radius are aware of the disturbance in the Aethyr that this spell causes. Bright Order Battle Wizards often seek out those using this spell in a careless way, to talk about demarcation in a rather pointed fashion.</td>	</tr>
+            <tr>	<td>Control Undead</td>	
+                <td>Necromancy</td>	
+                <td>3</td>	
+                <td>17</td>	
+                <td>170</td>	
+                <td>Half action</td>	
+                <td>A piece of wood from a desecrated coffin (+2)</td>	
+                <td>You bend one of the ethereal Undead to your will. You can target any one Banshee, Wraith, or Spirit within 24 yards (12 squares). Unless the creature makes a successful Will Power Test, it comes under your control for 24 hours.</td>	</tr>
+            <tr>	<td>Corpse Flesh</td>	
+                <td>Necromancy</td>	
+                <td>3</td>	
+                <td>19</td>	
+                <td>190</td>	
+                <td>Full action</td>	
+                <td>A piece of flesh from a Wight (+2)</td>	
+                <td>Your skin takes on the toughness of mortified flesh for 1 minute (6 rounds). During that time any Critical Hits against you have their Critical Value reduced by your Magic Characteristic.</td>	</tr>
+            <tr>	<td>Crow’S Feast</td>	
+                <td>Beasts</td>	
+                <td>3</td>	
+                <td>17</td>	
+                <td>170</td>	
+                <td>Full action</td>	
+                <td>A caged crow (+2)</td>	
+                <td>You summon up a murder of supernatural crows anywhere within 48 yards (24 squares) that swoops down upon your enemies. These are Aethyric creatures of vengeance, with iron-shod beaks and bleeding feathers. They may be summoned anywhere, as they are capable of passing through any form of non-sentient material—trees, rocks, metal etc. These “crows” always appear in huge flocks—use the large template to represent this. Those affected take a Damage 3 hit from the furious crows, which then scatter as quickly as they appeared. Do not roll for hit location; all hits are to the head.</td>	</tr>
+            <tr>	<td>Crown Of Fire</td>	
+                <td>Fire</td>	
+                <td>3</td>	
+                <td>8</td>	
+                <td>80</td>	
+                <td>Full action</td>	
+                <td>1 gc (+1)</td>	
+                <td>This spell creates a majestic crown of shimmering flame above your head. It remains for a number of minutes equal to your Magic Characteristic. During the spell’s duration, you gain a +20% to all Command and Intimidate Tests. Furthermore, enemies must make a successful WP Test in order to attack you in melee combat. If they fail, they must take a different action. The flaming diadem provides the illumination of a torch and can be used to ignite flammable materials, though this requires such undignified movements that few Bright Wizards use it for such a purpose. Note that it is impossible for a Bright Wizard to damage himself using this spell.</td>	</tr>
+            <tr>	<td>Cure Blight</td>	
+                <td>Life</td>	
+                <td>3</td>	
+                <td>27</td>	
+                <td>270</td>	
+                <td>10 minutes</td>	
+                <td>A vial of water from a sacred pool (+3)</td>	
+                <td>You can cleanse an area of up to one square mile of blight. This saves plants, trees, crops, and other growing things and makes the area immune to the same blight for the rest of the season. Alternately, this spell can be cast on 2d10 characters suffering from disease. The duration of any diseases these characters are suffering from is halved (rounded down).</td>	</tr>
+            <tr>	<td>Curse</td>	
+                <td>The Heavens</td>	
+                <td>3</td>	
+                <td>16</td>	
+                <td>160</td>	
+                <td>Half action</td>	
+                <td>A broken mirror (+2)</td>	
+                <td>You curse one opponent within 24 yards (12 squares). For the next 24 hours, the target suffers a –10% penalty on all tests and all attacks against him gain a +1 bonus to damage. A character can only be the subject of one curse at a time.</td>	</tr>
+            <tr>	<td>Curse Of Rust</td>	
+                <td>Metal</td>	
+                <td>3</td>	
+                <td>9</td>	
+                <td>90</td>	
+                <td>Half action</td>	
+                <td>A rusty nail (+1)</td>	
+                <td>You rust and corrode one metal object within 12 yards (6 squares) of you, making it pitted and useless. You can affect an object with an Encumbrance of 75 or less. See Chapter 5: Equipment for the Encumbrance of common items.</td>	</tr>
+            <tr>	<td>Curse Of Thorns</td>	
+                <td>Life</td>	
+                <td>3</td>	
+                <td>6</td>	
+                <td>60</td>	
+                <td>Half action</td>	
+                <td>A thorn (+1)</td>	
+                <td>You cause thorns to grow inside the body of one character with 36 yards (18 squares), wracking him with excruciating pain. On each of the target’s next 1d10 turns, he must make a successful Will Power Test or lose 1 Wound (regardless of Toughness Bonus or armour) and suffer a –20% penalty on all tests for one round.</td>	</tr>
+            <tr>	<td>Daemonbane</td>	
+                <td>Light</td>	
+                <td>3</td>	
+                <td>26</td>	
+                <td>260</td>	
+                <td>1 full action and 1 half action</td>	
+                <td>A wand made from an oak that’s been struck by lightning (+3)</td>	
+                <td>You rend the very Aethyr and cast a group of Daemons within 48 yards (24 squares) back to whence they came. Use the large template. Affected Daemons must make a successful Will Power Test or be banished back to the Realm of Chaos.</td>	</tr>
+            <tr>	<td>Dark Hand Of Destruction</td>	
+                <td>Chaos</td>	
+                <td>3</td>	
+                <td>17</td>	
+                <td>170</td>	
+                <td>Full action</td>	
+                <td>The hand of a hanged man (+2)</td>	
+                <td>You wreath your hand in a nimbus of dark magic. It counts as a magic weapon with the Armour Piercing Quality and Damage 7 and you gain a +10% bonus to your Weapon Skill when attacking with it. The spell remains in effect for a number of rounds equal to your Magic Characteristic. You can retain it with a successful Will Power Test each round thereafter.</td>	</tr>
+            <tr>	<td>Dazzling Brightness</td>	
+                <td>Light</td>	
+                <td>3</td>	
+                <td>5</td>	
+                <td>50</td>	
+                <td>Half action</td>	
+                <td>A small mirror (+1)</td>	
+                <td>You create a burst of light within 36 yards (18 squares) that dazzles those in the area. Use the small template. Those affected suffer a –10% penalty to their Weapon Skill, Ballistic Skill, and Agility, and to all Perception Tests involving sight, for 1d10 rounds.</td>	</tr>
+            <tr>	<td>Death’S Door</td>	
+                <td>Death</td>	
+                <td>3</td>	
+                <td>20</td>	
+                <td>200</td>	
+                <td>Full action</td>	
+                <td>A vial of embalming fluid (+2)</td>	
+                <td>Your power over death is such that you can briefly delay the inevitable. Death’s door lasts a number of minutes equal to your Magic Characteristic and affects you and all your allies within 24 yards (12 squares). Those affected, if slain during the spell’s duration, can take a half action on their normal Initiative before dying. As soon as the action is resolved, death beckons.</td>	</tr>
+            <tr>	<td>Deathsight</td>	
+                <td>Death</td>	
+                <td>3</td>	
+                <td>5</td>	
+                <td>50</td>	
+                <td>Full action</td>	
+                <td>A handful of dirt from a grave (+1)</td>	
+                <td>For 1 hour you can see spirits and souls that are normally invisible to the naked eye. When living beings die, you can see their souls leaving their bodies.</td>	</tr>
+            <tr>	<td>Dispel</td>	
+                <td>Lesser</td>	
+                <td>2</td>	
+                <td>13</td>	
+                <td>130</td>	
+                <td>Full action</td>	
+                <td>A small silver hammer (+2)</td>	
+                <td>You cause a spell within 12 yards (6 squares) of you to end prematurely. This can be used to dispel any ongoing spell but not ritual magic. You can immediately end the target spell with a successful Channelling Test, but you suffer a –10% penalty per point of the original caster’s Magic Characteristic. If you were trying to dispel a blessed weapon spell cast by a Wizard with Magic 2, for example, your Channelling Test would be at –20%. Dispel has no effect on summoned Daemons or re-animated Undead.</td>	</tr>
+            <tr>	<td>Doppelganger</td>	
+                <td>Shadow</td>	
+                <td>3</td>	
+                <td>7</td>	
+                <td>70</td>	
+                <td>1 full action and 1 half action</td>	
+                <td>A lock of hair from a member of the race you are impersonating (+1)</td>	
+                <td>You can take on the appearance (including clothing, armour, and so on) of any other living, humanoid creature under ten feet in height (Human, Elf, Orc, etc.) for a number of minutes equal to ten times your Magic Characteristic. The spell does not disguise your voice, only your appearance. You may look like an Orc, for instance, but if you can’t speak the Goblin Tongue, it’s best to keep your mouth shut around greenskins. Should you somehow act in a suspicious manner, viewers are allowed an Intelligence Test to see through the illusion. If you want to look like a specific individual, you must make a successful Channelling Test to perfect the disguise. Otherwise, you look like an undistinguished member of the same race.</td>	</tr>
+            <tr>	<td>Dread Aspect</td>	
+                <td>Shadow</td>	
+                <td>3</td>	
+                <td>21</td>	
+                <td>210</td>	
+                <td>Half action</td>	
+                <td>A shred of cloth from the robes of a Wight (+3)</td>	
+                <td>You make yourself look like a nightmare creature of purest dread. You cause Terror (see Chapter 9: The Game Master for details) for 1 minute (6 rounds).</td>	</tr>
+            <tr>	<td>Drop</td>	
+                <td>Petty (A)</td>	
+                <td>1</td>	
+                <td>4</td>	
+                <td>40</td>	
+                <td>Half action</td>	
+                <td>A dab of butter (+1)</td>	
+                <td>You compel a target character within 24 yards (12 squares) to drop whatever he is holding. The subject of this spell can resist it with a successful Will Power Test.</td>	</tr>
+            <tr>	<td>Earth Blood</td>	
+                <td>Life</td>	
+                <td>3</td>	
+                <td>9</td>	
+                <td>90</td>	
+                <td>1-10 half actions</td>	
+                <td>A dagger (+1)</td>	
+                <td>You absorb energy from the earth beneath your feet to heal yourself. You must be standing on natural earth. If cast successfully, earth blood heals Wounds equal to the number of half actions you spent casting the spell (maximum 10). You may not cast this spell on others.</td>	</tr>
+            <tr>	<td>Earth Gate</td>	
+                <td>Life</td>	
+                <td>3</td>	
+                <td>14</td>	
+                <td>140</td>	
+                <td>Full action</td>	
+                <td>An iron key (+2)</td>	
+                <td>You disappear into the earth and reappear anywhere with 48 yards (24 squares). Both your departure and arrival points must be areas of natural earth. This means you can’t cast this spell while inside a building or on a cobblestone street, for example.</td>	</tr>
+            <tr>	<td>Enchant Item</td>	
+                <td>Metal</td>	
+                <td>3</td>	
+                <td>21</td>	
+                <td>210</td>	
+                <td>1 minute</td>	
+                <td>A griffon’s feather (+3)</td>	
+                <td>You can temporarily enchant an item to give a +5% bonus to any one of the bearer/wielder’s Characteristics. Function must follow form. You could enchant a sword to give a Weapon Skill bonus, for example, or a circlet for a Fellowship bonus. The enchantment lasts for one hour and an item can only bear one at a time. The item counts as magical. This is a touch spell.</td>	</tr>
+            <tr>	<td>Eyes Of Truth</td>	
+                <td>Light</td>	
+                <td>3</td>	
+                <td>20</td>	
+                <td>200</td>	
+                <td>Full action</td>	
+                <td>A glass sphere (+2)</td>	
+                <td>Your eyes shine with the light of truth. For a number of rounds equal to your Magic Characteristic, you can see through illusions, magical and mundane darkness, invisibility, and disguises within 48 yards (24 squares) of you. All concealed characters are also revealed to you.</td>	</tr>
+            <tr>	<td>Face Of Death</td>	
+                <td>Necromancy</td>	
+                <td>3</td>	
+                <td>6</td>	
+                <td>60</td>	
+                <td>Full action</td>	
+                <td>A skull (+1)</td>	
+                <td>Your make your face look like a leering skull, the very symbol of death. You cause Fear for 1 minute (6 rounds).</td>	</tr>
+            <tr>	<td>Fat Of The Land</td>	
+                <td>Life</td>	
+                <td>3</td>	
+                <td>8</td>	
+                <td>80</td>	
+                <td>1 minute</td>	
+                <td>A handful of animal feed (+1)</td>	
+                <td>Just as animals fatten themselves up before winter, you cause the character you touch to feed on and store the energy of Ghyran. The subject of the spell does not need to eat for one week, though drinking is still required. You can cast this spell on yourself. Fat of the land is a touch spell.</td>	</tr>
+            <tr>	<td>Fate Of Doom</td>	
+                <td>The Heavens</td>	
+                <td>3</td>	
+                <td>31</td>	
+                <td>310</td>	
+                <td>1 hour</td>	
+                <td>The noose of a hanged man (+3)</td>	
+                <td>You use the mightiest of magics to alter the course of fate itself. Before you can cast it, you must acquire a lock of hair or drop of blood from the intended target. With this in hand, you can attempt to doom your victim. You must be within 1 mile of the target for fate of doom to be effective. If you cast this spell successfully, your opponent must make a Very Hard (–30%) Will Power Test or lose 1 Fate Point permanently. Fortune Points cannot be used to re-roll this test. A character without Fate Points treats the next Critical Hit suffered as if it had a Critical Value of +10. As this is such an awesome conjuration, all Wizards within a 5-mile radius are aware of the disturbance in the Aethyr that this spell causes. Elder Astromancers teach that this spell is reserved for the most heinous of foes.</td>	</tr>
+            <tr>	<td>Fiery Blast</td>	
+                <td>Fire</td>	
+                <td>3</td>	
+                <td>22</td>	
+                <td>220</td>	
+                <td>Full action</td>	
+                <td>A dagger of thrice-forged steel (+3)</td>	
+                <td>You send 1d10 blasts of flaming death at one or more opponents within 48 yards (24 squares). Fiery blasts are magic missiles with Damage 4. The minimum number of blasts is equal to your Magic Characteristic.</td>	</tr>
+            <tr>	<td>Final Words</td>	
+                <td>Death</td>	
+                <td>3</td>	
+                <td>18</td>	
+                <td>180</td>	
+                <td>Full action</td>	
+                <td>A piece of vellum (+2)</td>	
+                <td>You can ask one question of the departing soul of a slain character within 12 yards (6 squares) of you. This must be done within 1 minute (6 rounds) of the character’s death or the soul will have already passed on to the realm of Morr. The soul is not compelled to answer truthfully (or at all, for that matter). Final words cannot be cast on creatures without souls, like Daemons and the Undead.</td>	</tr>
+            <tr>	<td>Fire Ball</td>	
+                <td>Fire</td>	
+                <td>3</td>	
+                <td>12</td>	
+                <td>120</td>	
+                <td>Half action</td>	
+                <td>A ball of sulphur (+2)</td>	
+                <td>You create a number of balls of fire equal to your Magic Characteristic and can hurl them at one or more opponents within 48 yards (24 squares). Fire balls are magic missiles with Damage 3.</td>	</tr>
+            <tr>	<td>Fires Of U’Zhul</td>	
+                <td>Fire</td>	
+                <td>3</td>	
+                <td>6</td>	
+                <td>60</td>	
+                <td>Half action</td>	
+                <td>A match (+1)</td>	
+                <td>You can throw a bolt of fire at an opponent within 36 yards (18 squares) of you. This is a magic missile with Damage 4.</td>	</tr>
+            <tr>	<td>First Portent Of Amul</td>	
+                <td>The Heavens</td>	
+                <td>3</td>	
+                <td>6</td>	
+                <td>60</td>	
+                <td>Half action</td>	
+                <td>A piece of glass (+1)</td>	
+                <td>You can read the signs in the air and divine clues as to what the immediate future holds. On your next turn, you can make one dice re-roll of your choice. This can be any sort of roll (Skill Test, damage roll, Casting Roll, etc).</td>	</tr>
+            <tr>	<td>Flaming Sword Of Rhuin</td>	
+                <td>Fire</td>	
+                <td>3</td>	
+                <td>14</td>	
+                <td>140</td>	
+                <td>Half action</td>	
+                <td>A torch (+2)</td>	
+                <td>A fiery sword materializes in your grasp. It counts as a magic weapon with the Impact quality and Damage 4. You also gain +1 to your Attacks Characteristic for the duration of this spell, but only when using the flaming sword of rhuin. The spell remains in effect for a number of rounds equal to your Magic Characteristic. You can retain it with a successful Will Power Test each round thereafter.</td>	</tr>
+            <tr>	<td>Form Of The Raging Bear</td>	
+                <td>Beasts</td>	
+                <td>3</td>	
+                <td>21</td>	
+                <td>210</td>	
+                <td>3 full actions</td>	
+                <td>A bear’s claw (+3)</td>	
+                <td>This spell works exactly like form of the soaring raven, but you transform into a bear instead. See Chapter 11: The Bestiary for bear stats.</td>	</tr>
+            <tr>	<td>Form Of The Ravening Wolf</td>	
+                <td>Beasts</td>	
+                <td>3</td>	
+                <td>15</td>	
+                <td>150</td>	
+                <td>2 full actions</td>	
+                <td>A wolf ’s paw (+2)</td>	
+                <td>This spell works exactly like form of the soaring raven, but you transform into a wolf instead. See Chapter 11: The Bestiary for wolf stats.</td>	</tr>
+            <tr>	<td>Form Of The Soaring Raven</td>	
+                <td>Beasts</td>	
+                <td>3</td>	
+                <td>7</td>	
+                <td>70</td>	
+                <td>Full action</td>	
+                <td>A raven feather (+1)</td>	
+                <td>You transform yourself (and all the equipment you are carrying) into a raven for up to 1 hour. You retain your mental faculties and your Intelligence and Will Power. Your other stats are as a raven (see Chapter 11: The Bestiary). You cannot talk or use magic while in raven form. You may end this spell at any time and resume your normal form. The spell ends automatically if you take a Critical Hit.</td>	</tr>
+            <tr>	<td>Geyser</td>	
+                <td>Life</td>	
+                <td>3</td>	
+                <td>22</td>	
+                <td>220</td>	
+                <td>Full action</td>	
+                <td>A dowsing rod blessed by a Priest of Taal (+3)</td>	
+                <td>You cause a geyser of water to shoot up from an area of natural earth within 24 yards (12 squares). Use the small template. Those affected take a Damage 4 hit and are knocked 4 yards (2 squares) in the direction of your choice by the erupting water. They must make a Toughness Test or be stunned for 1d10 rounds. They are knocked down regardless. After the initial burst, a pool forms in the area of the template, providing fresh water for the next hour.</td>	</tr>
+            <tr>	<td>Ghost Step</td>	
+                <td>Petty (H)</td>	
+                <td>1</td>	
+                <td>4</td>	
+                <td>40</td>	
+                <td>1 full action and 1 half action</td>	
+                <td>A pinch of sand (+1)</td>	
+                <td>You leave no visible tracks for 1 hour no matter what type of terrain you are walking through. Anyone trying to Follow Trail suffers a –30% penalty.</td>	</tr>
+            <tr>	<td>Glowing Light</td>	
+                <td>Petty (A)</td>	
+                <td>1</td>	
+                <td>3</td>	
+                <td>30</td>	
+                <td>Half action</td>	
+                <td>A drop of lamp oil (+1)</td>	
+                <td>You can cause any item in your grasp to glow with the light of a lantern for one hour or until you let it go.</td>	</tr>
+            <tr>	<td>Guard Of Steel</td>	
+                <td>Metal</td>	
+                <td>3</td>	
+                <td>5</td>	
+                <td>50</td>	
+                <td>Half action</td>	
+                <td>A steel ball (+1)</td>	
+                <td>You summon shimmering orbs of steel that rotate around your body and protect you from incoming attacks for 1 minute (6 rounds) and then disappear. All attacks against you suffer a –10% penalty to Weapon Skill or Ballistic Skill as appropriate.</td>	</tr>
+            <tr>	<td>Gust</td>	
+                <td>Petty (H)</td>	
+                <td>1</td>	
+                <td>4</td>	
+                <td>40</td>	
+                <td>Half action</td>	
+                <td>A bird’s feather (+1)</td>	
+                <td>The wave of your hand creates a light gust of wind to blow through the area. It is strong enough to blow out candles and scatter papers, but not of such force to knock over objects of any weight.</td>	</tr>
+            <tr>	<td>Hand Of Dust</td>	
+                <td>Necromancy</td>	
+                <td>3</td>	
+                <td>13</td>	
+                <td>130</td>	
+                <td>Half action</td>	
+                <td>The hand of a murderer (+2)</td>	
+                <td>Your touch destroys the flesh of living opponents, causing 1d10 Wounds regardless of Toughness Bonus or armour. Undead are immune to the hand of dust. This is a touch spell.</td>	</tr>
+            <tr>	<td>Healing Of Hysh</td>	
+                <td>Light</td>	
+                <td>3</td>	
+                <td>10</td>	
+                <td>100</td>	
+                <td>Full action</td>	
+                <td>A clear glass bead (+2)</td>	
+                <td>Your touch heals an injured character a number of Wounds equal to your Magic Characteristic. You can also heal yourself. This is a touch spell.</td>	</tr>
+            <tr>	<td>Hearts Of Fire</td>	
+                <td>Fire</td>	
+                <td>3</td>	
+                <td>16</td>	
+                <td>160</td>	
+                <td>2 full actions</td>	
+                <td>A vial with a mixture made of blood and oil (+2)</td>	
+                <td>You unlock the fires of courage in the hearts of your allies. All allies within 30 yards (15 squares) of you gain a +20% bonus on Fear and Terror Tests for the next ten minutes. They lose this bonus if they move further than 30 yards (15 squares) away from you.</td>	</tr>
+            <tr>	<td>Ill Fortune</td>	
+                <td>Petty (H)</td>	
+                <td>1</td>	
+                <td>5</td>	
+                <td>50</td>	
+                <td>1 full action and 1 half action</td>	
+                <td>A crude doll of the victim (+1)</td>	
+                <td>You can enchant an item so that its bearer is cursed with bad luck. You must be able to touch the item to cast the spell (if the item is on someone’s person, the rules for touch spells apply). For the next 24 hours, the bearer of the cursed item suffers a penalty equal to your Magic Characteristic on all tests. A character can only be the subject of one ill fortune at a time.</td>	</tr>
+            <tr>	<td>Illusion</td>	
+                <td>Shadow</td>	
+                <td>3</td>	
+                <td>24</td>	
+                <td>240</td>	
+                <td>1 full action and 1 half action</td>	
+                <td>A crystal prism (+3)</td>	
+                <td>You create an illusion anywhere within 48 yards (24 squares) that is a nearly perfect simulation of reality, complete with sight, sound, and smell. Use the large template. You can make this area look like literally anything. Illusion lasts for a number of rounds equal to your Magic Characteristic, but you can keep it going with a successful Will Power Test each subsequent round. You must spend a half action each round maintaining the illusion. Furthermore, you cannot cast any other spells or the illusion disappears immediately. Viewers may be allowed an Intelligence Test to see through the illusion if they have cause to suspect it’s a trick. The precise effects of the illusion are up to the GM to determine and should follow the guidelines of common sense.</td>	</tr>
+            <tr>	<td>Inspiration</td>	
+                <td>Light</td>	
+                <td>3</td>	
+                <td>16</td>	
+                <td>160</td>	
+                <td>1 minute</td>	
+                <td>A page from a book (+2)</td>	
+                <td>You open your mind to Hysh and let the light of wisdom illuminate a vexing intellectual problem. Upon the spell’s completion, you can make a single Knowledge Skill Test with a +30% bonus.</td>	</tr>
+            <tr>	<td>Invigorating Vitae</td>	
+                <td>Necromancy</td>	
+                <td>3</td>	
+                <td>11</td>	
+                <td>110</td>	
+                <td>1 full action and 1 half action</td>	
+                <td>The teeth of a vampire bat (+2)</td>	
+                <td>You drink the blood of a corpse to heal your own wounds. The corpse must be freshly killed (dead less than 1 hour). If cast successfully, invigorating vitae heals 1d10 Wounds.</td>	</tr>
+            <tr>	<td>Law Of Gold</td>	
+                <td>Metal</td>	
+                <td>3</td>	
+                <td>26</td>	
+                <td>260</td>	
+                <td>Full action</td>	
+                <td>A small but ornate golden sheath worth at least 75 gc (+3).</td>	
+                <td>You enshroud a magic item within 24 yards (12 squares) of you in strands of Chamon, suppressing its abilities. The item loses all its magical functions for 1d10 rounds.</td>	</tr>
+            <tr>	<td>Law Of Logic</td>	
+                <td>Metal</td>	
+                <td>3</td>	
+                <td>7</td>	
+                <td>70</td>	
+                <td>1d10 full actions</td>	
+                <td>A blank piece of paper (+1)</td>	
+                <td>You use the magic of logic to aid one Skill or Characteristic Test. You must cast this spell before the test is taken and the spell can aid either you or an ally within 12 yards (6 squares). The random casting time (1d10 full actions) represents both the consideration of the problem and the casting of the spell. If cast successfully, law of logic provides a +20% bonus on the relevant Skill or Characteristic Test. The bonus must be used within 5 minutes of the spell’s completion.</td>	</tr>
+            <tr>	<td>Lightning Bolt</td>	
+                <td>The Heavens</td>	
+                <td>3</td>	
+                <td>10</td>	
+                <td>100</td>	
+                <td>Half action</td>	
+                <td>A tuning fork (+1)</td>	
+                <td>You can throw a bolt of lightning at an opponent within 36 yards (18 squares) of you. This is a magic missile with Damage 5.</td>	</tr>
+            <tr>	<td>Lightning Storm</td>	
+                <td>The Heavens</td>	
+                <td>3</td>	
+                <td>25</td>	
+                <td>250</td>	
+                <td>Full action</td>	
+                <td>A weather vane (+3)</td>	
+                <td>You summon a storm of lightning anywhere within 48 yards (24 squares). This is an Aethyric storm summoned from the Realm of Chaos, and may appear anywhere, from the deepest sewer to the wildest heath. Use the large template to represent the lightning storm. Those affected take a Damage 5 hit.</td>	</tr>
+            <tr>	<td>Lure Of Chaos</td>	
+                <td>Chaos</td>	
+                <td>3</td>	
+                <td>16</td>	
+                <td>160</td>	
+                <td>Full action</td>	
+                <td>A defiled holy symbol (+2)</td>	
+                <td>You ensorcell one character with 24 yards (12 squares) and bend him to your will. Unless the target makes a successful Will Power Test, you decide what actions he takes on his next turn. Undead are immune to the lure of Chaos.</td>	</tr>
+            <tr>	<td>Magic Alarm</td>	
+                <td>Lesser</td>	
+                <td>2</td>	
+                <td>8</td>	
+                <td>80</td>	
+                <td>1 minute</td>	
+                <td>A small brass bell (+1)</td>	
+                <td>You create a silent alarm on one spot that you touch. Whenever a creature comes within 2 yards (1 square) of this spot, you will be mentally alerted instantly no matter how far away you are. This wakes you up if you were sleeping. Magic alarm provides no details as to the identity of the trespasser, only that someone has triggered it. You can only have one magic alarm active at a time. The spell lasts until it is triggered or you cast it again on a different spot.</td>	</tr>
+            <tr>	<td>Magic Dart</td>	
+                <td>Petty (A)</td>	
+                <td>1</td>	
+                <td>6</td>	
+                <td>60</td>	
+                <td>Half action</td>	
+                <td>A small dart (+1)</td>	
+                <td>You throw a dart of magical force at an opponent within 16 yards (8 squares). Although small, the magic dart strikes with considerable force. A magic dart is magic missile with Damage 3.</td>	</tr>
+            <tr>	<td>Magic Flame</td>	
+                <td>Petty (H)</td>	
+                <td>1</td>	
+                <td>3</td>	
+                <td>30</td>	
+                <td>Half action</td>	
+                <td>A piece of flint (+1)</td>	
+                <td>You cause a bluish flame to burst to life in your open palm. It lasts as long as your palm stays open or until you cast another spell (whichever comes first). The flame is too small to cause any damage in combat, but it provides the illumination of a candle and can be used to ignite flammable materials like torches, thatch, etc.</td>	</tr>
+            <tr>	<td>Magic Lock</td>	
+                <td>Lesser</td>	
+                <td>2</td>	
+                <td>7</td>	
+                <td>70</td>	
+                <td>1 minute</td>	
+                <td>A small key (+1)</td>	
+                <td>You enchant one lock or bolt within 2 yards (1 square) for 1 week. It cannot be picked or forced open during that time. However, the spell does not prevent someone from smashing down a magically locked door or breaking into a magically locked chest.</td>	</tr>
+            <tr>	<td>Marsh Lights</td>	
+                <td>Petty (A)</td>	
+                <td>1</td>	
+                <td>6</td>	
+                <td>60</td>	
+                <td>Full action</td>	
+                <td>A firefly (+1)</td>	
+                <td>You create the appearance of a number of distant lights that suggest torches or lanterns. They appear within 100 yards (50 squares) of you and can then be sent off in any direction. They naturally follow corridors or paths and do not need to be controlled or overseen in any way. You can control them more closely if desired, but only as long as they remain in line of sight. You can’t perform any other actions while controlling the lights. The lights travel at various speeds, but never slower than 8 yards (4 squares) per round or faster than 16 yards (8 squares) per round. They last for one hour, and then gradually fade and vanish.</td>	</tr>
+            <tr>	<td>Master’S Voice</td>	
+                <td>Beasts</td>	
+                <td>3</td>	
+                <td>13</td>	
+                <td>130</td>	
+                <td>Half action</td>	
+                <td>A miniature whip made of braided animal hair (+2)</td>	
+                <td>You command one animal within 24 yards (12 squares) to do your bidding unless it makes a successful Will Power Test. On its next turn, you decide what actions the animal will take and it will do as you command.</td>	</tr>
+            <tr>	<td>Move</td>	
+                <td>Lesser</td>	
+                <td>2</td>	
+                <td>4</td>	
+                <td>40</td>	
+                <td>Half action</td>	
+                <td>A small fan (+1)</td>	
+                <td>You use magical force to move and manipulate light objects. You can move any unsecured light item (Encumbrance of 10 or less) up to 12 yards (6 squares). You can also open or close any unlocked door or knock over items with an Encumbrance of 50 or less if they are within 24 yards (12 squares) of you.</td>	</tr>
+            <tr>	<td>Omen</td>	
+                <td>The Heavens</td>	
+                <td>3</td>	
+                <td>4</td>	
+                <td>40</td>	
+                <td>1 minute</td>	
+                <td>The liver of a small animal (+1)</td>	
+                <td>You can divine the future in a limited way by reading the stars. When you cast omen, you can attempt to discover if the timing is favourable or unfavourable for an action you specify. The GM should secretly roll an Intelligence Test for you. If it’s a success, the result of the omen (favourable or unfavourable) is true. If it’s a failure, the result of the omen is false but you think it’s true (this is why the GM rolls instead of you). In either case, the GM should also secretly roll 2d10. This is the number of hours for which the omen holds true. Beyond that time results are too difficult to calculate. The GM must determine, to the best of his knowledge, the true answer when adjudicating this spell.</td>	</tr>
+            <tr>	<td>Pall Of Darkness</td>	
+                <td>Shadow</td>	
+                <td>3</td>	
+                <td>15</td>	
+                <td>150</td>	
+                <td>Half action</td>	
+                <td>The eyes of a newt (+2)</td>	
+                <td>You create a swirling area of impenetrable darkness anywhere within 48 yards (24 squares) of you that lasts for a number of rounds equal to your Magic Characteristic. Use the large template. Those affected cannot see, even with Night Vision. The confounding effect of the pall of darkness means that those affected can only take a half action each round unless they make a successful Will Power Test at the start of their turn.</td>	</tr>
+            <tr>	<td>Pillar Of Radiance</td>	
+                <td>Light</td>	
+                <td>3</td>	
+                <td>28</td>	
+                <td>280</td>	
+                <td>Full action</td>	
+                <td>A diamond worth at least 100 gc (+3)</td>	
+                <td>You focus and concentrate the energy of Hysh into a deadly column of burning light anywhere within 48 yards (24 squares). Use the large template. Those affected take a Damage 4 hit and must make a successful Agility Test or suffer the effects of the dazzling brightness spell. As this is such a potent conjuration, all Wizards within a 5-mile radius are aware of the disturbance in the Aethyr that this spell causes. Using this spell for anything other than Daemonic combat is deeply frowned upon by the Elder Heirophants of the Light Order.</td>	</tr>
+            <tr>	<td>Protection From Rain</td>	
+                <td>Petty (H)</td>	
+                <td>1</td>	
+                <td>3</td>	
+                <td>30</td>	
+                <td>Full action</td>	
+                <td>A freshly picked leaf (+1)</td>	
+                <td>This spell protects you from the rain and other types of precipitation. Even in the heaviest downpour, you and your belongings remain perfectly dry. The spell lasts for 1 hour, though you may dismiss it any before that at your option.</td>	</tr>
+            <tr>	<td>Radiant Gaze</td>	
+                <td>Light</td>	
+                <td>3</td>	
+                <td>7</td>	
+                <td>70</td>	
+                <td>Full action</td>	
+                <td>A lens (+1)</td>	
+                <td>Your gaze focuses radiant power on one target within 16 yards (8 squares). This is a magic missile with Damage 6. Sometimes, looks really can kill.</td>	</tr>
+            <tr>	<td>Raise The Dead</td>	
+                <td>Necromancy</td>	
+                <td>3</td>	
+                <td>22</td>	
+                <td>220</td>	
+                <td>2 full actions</td>	
+                <td>Dust from a mummy (+3)</td>	
+                <td>As re-animate but you create 2d10 Skeletons or Zombies within 24 yards (12 squares) of you.</td>	</tr>
+            <tr>	<td>Re-Animate</td>	
+                <td>Necromancy</td>	
+                <td>3</td>	
+                <td>8</td>	
+                <td>80</td>	
+                <td>1 half action per corpse</td>	
+                <td>Dust from a grave (+1)</td>	
+                <td>You re-animate the dead, creating a number of Skeletons or Zombies equal to your Magic Characteristic. You must be within 12 yards (6 squares) of either fresh corpses (which make Zombies) or the aged remains of the dead (which make Skeletons).</td>	</tr>
+            <tr>	<td>Reaping Scythe</td>	
+                <td>Death</td>	
+                <td>3</td>	
+                <td>8</td>	
+                <td>80</td>	
+                <td>Half action</td>	
+                <td>A miniature iron scythe (+1)</td>	
+                <td>A scythe of Amethyst energy materializes in your grasp. It counts as a magic weapon with the Fast Quality and Damage 5 and you gain a +10% bonus to your Weapon Skill when wielding it. The spell remains in effect for a number of rounds equal to your Magic Characteristic. You can retain it with a successful Will Power Test each round thereafter.</td>	</tr>
+            <tr>	<td>River’S Whisper</td>	
+                <td>Life</td>	
+                <td>3</td>	
+                <td>15</td>	
+                <td>150</td>	
+                <td>1 minute</td>	
+                <td>A flagon of wine (+2)</td>	
+                <td>You commune with the spirit of a river. To cast this spell, you must be at least waist deep in the river in question. Your magic and indeed a part of yourself flow into the water, allowing you to ask questions of the river. You can ask about anything that happened on or in the river over the past 24 hours and up to 1 mile up or downstream. Answers are quite general. You could find out, for instance, that two boats had passed downriver and that one of them was especially large. You could not find out the names of the boats or their passengers. You might find out that Orcs attacked one of the boats, but not what tribe the Orcs came from. River’s whisper lasts for a number of minutes equal to your Magic Characteristic.</td>	</tr>
+            <tr>	<td>Second Portent Of Amul</td>	
+                <td>The Heavens</td>	
+                <td>3</td>	
+                <td>12</td>	
+                <td>120</td>	
+                <td>Full action</td>	
+                <td>A piece of stained glass (+2)</td>	
+                <td>As first portent of Amul, but you get two re-rolls and can use them any time in the next hour. You cannot cast this spell again until you use both re-rolls or the time limit expires (whichever comes first).</td>	</tr>
+            <tr>	<td>Shadow Knives</td>	
+                <td>Shadow</td>	
+                <td>3</td>	
+                <td>22</td>	
+                <td>220</td>	
+                <td>Half action</td>	
+                <td>A knife of cold-forged iron (+3)</td>	
+                <td>You conjure up a number of shadow knives equal to your Magic Characteristic and can hurl them at one or more opponents within 48 yards (24 squares). Shadow knives are magic missiles with Damage 3. Furthermore, their shadow nature means that all non-magic armour is ignored when reducing damage.</td>	</tr>
+            <tr>	<td>Shadowcloak</td>	
+                <td>Shadow</td>	
+                <td>3</td>	
+                <td>5</td>	
+                <td>50</td>	
+                <td>Half action</td>	
+                <td>A piece of charcoal (+1)</td>	
+                <td>You wrap yourself in shadow, so you are difficult to detect. Shadowcloak gives you a +20% bonus on Concealment Skill Tests for a number of minutes equal to your Magic Characteristic.</td>	</tr>
+            <tr>	<td>Shield Of Aqshy</td>	
+                <td>Fire</td>	
+                <td>3</td>	
+                <td>12</td>	
+                <td>120</td>	
+                <td>Full action</td>	
+                <td>An iron amulet (+2)</td>	
+                <td>You wrap yourself with currents of the Red Wind, which shields you against fire attacks. You receive a +20% bonus to your Toughness for 1d10 minutes, but only against fire damage such as dragon breath, fire balls, etc. You cannot cast this spell on others.</td>	</tr>
+            <tr>	<td>Shimmering Cloak</td>	
+                <td>Light</td>	
+                <td>3</td>	
+                <td>8</td>	
+                <td>80</td>	
+                <td>Half action</td>	
+                <td>A candle (+1)</td>	
+                <td>You surround yourself with a field of light that protects you from ranged attacks. All non-magical missile attacks have their Damage rating reduced to 0 (in other words, damage is simply 1d10). Shimmering cloak lasts a number of minutes equal to your Magic Characteristic. You automatically fail any Concealment Tests you attempt while shimmering cloak is in effect.</td>	</tr>
+            <tr>	<td>Shock</td>	
+                <td>Petty (H)</td>	
+                <td>1</td>	
+                <td>6</td>	
+                <td>60</td>	
+                <td>Half action</td>	
+                <td>A small pin (+1)</td>	
+                <td>Your touch stuns one opponent for a number of rounds equal to your Magic Characteristic unless a successful Will Power Test is made. Shock is a touch spell.</td>	</tr>
+            <tr>	<td>Shroud Of Invisibility</td>	
+                <td>Shadow</td>	
+                <td>3</td>	
+                <td>17</td>	
+                <td>170</td>	
+                <td>Full action</td>	
+                <td>A gossamer shroud (+2)</td>	
+                <td>You shroud yourself with magic and disappear from sight for 1d10 rounds. While you are invisible, you can’t be targeted with ranged attacks, including magic missiles. Any melee attacks you make receive a +20% Weapon Skill bonus. Anyone within 4 yards (2 squares) of you can make a Hard (–20%) Perception Skill Test to detect you using non-visual senses. If a successful test is made, you can be attacked, but attackers suffer a –30% penalty to Weapon Skill or Ballistic Skill as appropriate. You cannot cast this spell on others.</td>	</tr>
+            <tr>	<td>Silence</td>	
+                <td>Lesser</td>	
+                <td>2</td>	
+                <td>10</td>	
+                <td>100</td>	
+                <td>Half action</td>	
+                <td>A gag (+1)</td>	
+                <td>You magically silence one character within 24 yards (12 squares) of you. The target can resist the spell with a successful Will Power Test. Otherwise, he cannot talk or even grunt for a number of rounds equal to your Magic Characteristic.</td>	</tr>
+            <tr>	<td>Silver Arrows Of Arha</td>	
+                <td>Metal</td>	
+                <td>3</td>	
+                <td>13</td>	
+                <td>130</td>	
+                <td>Half action</td>	
+                <td>A silver arrowhead (+2)</td>	
+                <td>You create a number of magical silver arrows equal to your Magic Characteristic and can hurl them at one or more opponents within 48 yards (24 squares). Silver arrows are magic missiles with Damage 3. They disappear after inflicting damage.</td>	</tr>
+            <tr>	<td>Skywalk</td>	
+                <td>Lesser</td>	
+                <td>2</td>	
+                <td>11</td>	
+                <td>110</td>	
+                <td>Full action</td>	
+                <td>An eagle’s feather (+2)</td>	
+                <td>You briefly walk on air, moving up to triple your Movement Characteristic and then returning to the ground. You can reach a height of up to 6 yards, allowing you to easily walk over ground obstacles. Skywalk is in effect while casting.</td>	</tr>
+            <tr>	<td>Sleep</td>	
+                <td>Petty (A)</td>	
+                <td>1</td>	
+                <td>6</td>	
+                <td>60</td>	
+                <td>Half action</td>	
+                <td>A piece of down (+1)</td>	
+                <td>Your touch causes one opponent to fall into a slumber for 1d10 rounds unless a successful Will Power Test is made. Sleeping characters are considered to be helpless. Sleep is a touch spell.</td>	</tr>
+            <tr>	<td>Sounds</td>	
+                <td>Petty (A)</td>	
+                <td>1</td>	
+                <td>4</td>	
+                <td>40</td>	
+                <td>Half action</td>	
+                <td>A tiny bell (+1)</td>	
+                <td>You can create a phantom noise with this spell, with volume ranging from a whisper to a roar. You can choose the type of noise and the volume; the spell can reproduce any type of noise but speech. The noise can last for up to one round.</td>	</tr>
+            <tr>	<td>Spell Of Awakening</td>	
+                <td>Necromancy</td>	
+                <td>3</td>	
+                <td>24</td>	
+                <td>240</td>	
+                <td>2 full actions</td>	
+                <td>A circlet of iron quenched in human blood (+3)</td>	
+                <td>As re-animate but you create Wights instead. The remainsused must be those of a character with an advanced career.</td>	</tr>
+            <tr>	<td>Spring Bloom</td>	
+                <td>Life</td>	
+                <td>3</td>	
+                <td>18</td>	
+                <td>180</td>	
+                <td>10 minutes</td>	
+                <td>A handful of natural fertilizer (+2)</td>	
+                <td>You concentrate the power of life magic in one area or being. You can affect either a plot of land the size of a farmer’s field or one living being of any race. A field will literally burst with life and the next harvest is guaranteed to be abundant. If cast on a living being, conception will occur within a month if all other normal conditions (i.e. breeding) are met.</td>	</tr>
+            <tr>	<td>Starshine</td>	
+                <td>The Heavens</td>	
+                <td>3</td>	
+                <td>22</td>	
+                <td>220</td>	
+                <td>1 full action and 1 half action</td>	
+                <td>A star chart (+3)</td>	
+                <td>You call down the light of the stars. The area within 48 yards (24 squares) of you is illuminated by a soft light that reveals all that is hidden. Darkness (both magical and mundane) is banished, the invisible is made visible, hidden or disguised characters are exposed, and secret areas (doors, chambers, etc.) are revealed. Starshine lasts for a number of minutes equal to your Magic Characteristic.</td>	</tr>
+            <tr>	<td>Steal Life</td>	
+                <td>Death</td>	
+                <td>3</td>	
+                <td>16</td>	
+                <td>160</td>	
+                <td>Half action</td>	
+                <td>A vial of blood (+2)</td>	
+                <td>You suck the life essence of a foe within 12 yards (6 squares) of you and use it to heal yourself. The target loses 1d10 Wounds, regardless of Toughness Bonus or armour, unless a successful Will Power Test is made. You are healed of as many Wounds as you inflict. If you already have your full amount of Wounds, you don’t gain any more (though the target is still damaged). Steal life has no effect on Daemons and the Undead.</td>	</tr>
+            <tr>	<td>Summer Heat</td>	
+                <td>Life</td>	
+                <td>3</td>	
+                <td>12</td>	
+                <td>120</td>	
+                <td>Half action</td>	
+                <td>A vial of sweat from an honest man (+2)</td>	
+                <td>You cause a small area to burn with the heat of summer. Use the large template. Those affected sweat profusely and feel incredibly fatigued, as if they had been working all day under the hot sun. They suffer a –20% penalty on all tests for 1d10 rounds.</td>	</tr>
+            <tr>	<td>Summon Daemon Pack</td>	
+                <td>Chaos</td>	
+                <td>3</td>	
+                <td>25</td>	
+                <td>250</td>	
+                <td>2 full actions</td>	
+                <td>The fresh hearts of six humanoids (+3)</td>	
+                <td>You summon a number of Lesser Daemons (see Chapter 11: Common Creatures and NPCs) equal to your Magic Characteristic. They appear in any unoccupied spots within 12 yards (6 squares) of you and remain for 1d10 minutes.</td>	</tr>
+            <tr>	<td>Summon Lesser Daemon</td>	
+                <td>Chaos</td>	
+                <td>3</td>	
+                <td>12</td>	
+                <td>120</td>	
+                <td>2 full actions</td>	
+                <td>The fresh heart of a humanoid (+2)</td>	
+                <td>You summon one Lesser Daemon (see Chapter 11: The Bestiary), which appears in any unoccupied spot within 12 yards (6 squares) of you. The Daemon remains for 1d10 minutes.</td>	</tr>
+            <tr>	<td>Swift Passing</td>	
+                <td>Death</td>	
+                <td>3</td>	
+                <td>7</td>	
+                <td>70</td>	
+                <td>Half action</td>	
+                <td>Two brass pennies (+1)</td>	
+                <td>With a touch of your fingers, you can dispatch a critically wounded character. Swift passing kills any character with 0 Wounds who has already taken a Critical Hit. This is a touch spell. This spell works on monsters, animals or even PCs. Souls dispatched in this way are immune to spells such as final words but still remain at risk of Necromantic resurrection.</td>	</tr>
+            <tr>	<td>The Beast Unleashed</td>	
+                <td>Beasts</td>	
+                <td>3</td>	
+                <td>19</td>	
+                <td>190</td>	
+                <td>2 full actions</td>	
+                <td>A wolf ’s heart (+2)</td>	
+                <td>You unleash the primal savagery of your allies. Any friendly character within 12 yards (6 squares) of you goes into a frenzy, as per the talent of that name. No roll is required; they become frenzied as soon as the spell is cast. This spell does not work on animals (they are already beasts!).</td>	</tr>
+            <tr>	<td>The Talking Beast</td>	
+                <td>Beasts</td>	
+                <td>3</td>	
+                <td>11</td>	
+                <td>110</td>	
+                <td>Half action</td>	
+                <td>A tongue from the animal you are changing into (+2)</td>	
+                <td>If you cast this spell immediately before taking on animal form, you can speak while so transformed. You can also cast this spell on an animal within 24 yards (12 squares) to gift it with the power of speech for a number of minutes equal to your Magic Characteristic.</td>	</tr>
+            <tr>	<td>Tide Of Years</td>	
+                <td>Death</td>	
+                <td>3</td>	
+                <td>11</td>	
+                <td>110</td>	
+                <td>Half action</td>	
+                <td>A small hourglass (+2)</td>	
+                <td>You cause one non-magical item with an Encumbrance of 75 or less to age and decay. Items of Poor or Common Quality turn to dust. Items of Good Quality become Poor and those of Best Craftmenship become Common. See Chapter 5: Equipment for the Encumbrance of common items and details on Craftsmanship. This is a touch spell.</td>	</tr>
+            <tr>	<td>Touch Of Chaos</td>	
+                <td>Chaos</td>	
+                <td>3</td>	
+                <td>20</td>	
+                <td>200</td>	
+                <td>Half action</td>	
+                <td>The horn of a Beastman (+2)</td>	
+                <td>Your touch channels pure Chaos energy into one target, causing him to mutate and change unless a successful Will Power Test is made. If the test is failed the target must roll on Table 11-1: Chaos Mutations on page 229. The mutation manifests in a matter of seconds and is permanent. If affected the target must also make a successful Will Power Test or be stunned for 1 round by the suddenness and vileness of the change. This is a touch spell. Undead are immune to the touch of Chaos.</td>	</tr>
+            <tr>	<td>Transformation Of Metal</td>	
+                <td>Metal</td>	
+                <td>3</td>	
+                <td>18</td>	
+                <td>180</td>	
+                <td>1 minute</td>	
+                <td>A charm in the shape of a hammer and anvil (+2)</td>	
+                <td>You can transform one metal object into a different one. This does not change the type of metal, only its shape. You could, for example, transform a metal buckler into a flagon. This spell does not work on magical items. The craftsmanship of the new item, if important, is determined by a Channelling Test. Making an item of best craftsmanship is a Very Hard (–30%) Test, while making an item of good craftsmanship is a Hard (–20%) Test. An Average Test yields an item of common craftsmanship, while a failed Channelling Test of any Difficulty means it’s an item of poor craftsmanship. This is a touch spell.</td>	</tr>
+            <tr>	<td>Transmutation Of The Unstable Mind</td>	
+                <td>Metal</td>	
+                <td>3</td>	
+                <td>23</td>	
+                <td>230</td>	
+                <td>10 minutes</td>	
+                <td>A page from a book written by a madman (+3)</td>	
+                <td>You seek to transmute a sick mind into a healthy one, which is quite a dangerous task. When you cast this spell, you must make a Channelling Test. If you are successful, the target loses 1d10 Insanity Points. If you fail the test, the target gains 1d10 Insanity Points instead. This is a touch spell. You cannot cast transmutation of the unstable mind on yourself. This spell does not work on animals.</td>	</tr>
+            <tr>	<td>Trial And Error</td>	
+                <td>Metal</td>	
+                <td>3</td>	
+                <td>16</td>	
+                <td>160</td>	
+                <td>Full action</td>	
+                <td>An empty glass vial (+2)</td>	
+                <td>You use magic to guide the efforts of all allies within 12 yards (6 squares) of you. Until the beginning of your next turn, each affected character is allowed to re-roll exactly one test or damage roll. The second roll is final.</td>	</tr>
+            <tr>	<td>Universal Confusion</td>	
+                <td>Shadow</td>	
+                <td>3</td>	
+                <td>27</td>	
+                <td>270</td>	
+                <td>Half action</td>	
+                <td>The eyes of a Chimera (+3)</td>	
+                <td>This is a more potent version of bewilder that can affect many targets. Use the large template. Anyone affected must make a successful Will Power Test or suffer the effects of the bewilder spell.</td>	</tr>
+            <tr>	<td>Veil Of Corruption</td>	
+                <td>Chaos</td>	
+                <td>3</td>	
+                <td>24</td>	
+                <td>240</td>	
+                <td>Full action</td>	
+                <td>The blade of a Chaos Champion (+3)</td>	
+                <td>You create a foul cloud of corruption anywhere within 36 yards (18 squares). Use the large template. Those affected must make a Will Power Test or lose 1 Wound regardless of Toughness Bonus or armour. Wounded characters continue to lose 1 wound per round until a successful Will Power Test is made. Those who suffer more than 1 Wound must also make a Toughness Test or begin to mutate. Those who fail the test gain a Chaos Mutation; roll on Table 11-1: Chaos Mutations on page 229 to generate the mutations.</td>	</tr>
+            <tr>	<td>Vision Of Torment</td>	
+                <td>Chaos</td>	
+                <td>3</td>	
+                <td>7</td>	
+                <td>70</td>	
+                <td>Half action</td>	
+                <td>A small mask (+1)</td>	
+                <td>You cause any one character within 24 yards (12 squares) to have a hellish vision. The target is stunned for 1 round unless a successful Will Power Test is made. Once the character recovers from being stunned, he must make a second Will Power Test or gain 1 Insanity Point.</td>	</tr>
+            <tr>	<td>Wind Blast</td>	
+                <td>The Heavens</td>	
+                <td>3</td>	
+                <td>14</td>	
+                <td>140</td>	
+                <td>Half action</td>	
+                <td>An animal bladder (+2)</td>	
+                <td>You call down raging winds from the sky anywhere within 48 yards (24 squares) to blow your opponents over. Use the large template. Those affected are knocked down and must make a Toughness Test or be stunned for 1 round. While in the area of effect, characters cannot fire missile weapons (or be targeted by them) and must make a successful Strength Test in order to move. Melee attacks can be made but at a –20% penalty. Wind blast lasts for a number of rounds equal to your Magic Characteristic.</td>	</tr>
+            <tr>	<td>Wind Of Death</td>	
+                <td>Death</td>	
+                <td>3</td>	
+                <td>27</td>	
+                <td>270</td>	
+                <td>Full action</td>	
+                <td>An amethyst worth at least 50 gc (+3)</td>	
+                <td>You call down a lethal wind of Shyish anywhere within 48 yards (24 squares). Use the large template. Those affected lose 1d10 Wounds, regardless of Toughness Bonus or armour. Due to the cataclysmic nature of this conjuration, all Wizards within a 5-mile radius are aware of the disturbance in the Aethyr that this spell causes. The Lords of the Amethyst Order have many cruel and unusual punishments for those that tarry with this spell needlessly, or too often.</td>	</tr>
+            <tr>	<td>Wings Of Heaven</td>	
+                <td>The Heavens</td>	
+                <td>3</td>	
+                <td>18</td>	
+                <td>180</td>	
+                <td>Full action</td>	
+                <td>A dove’s feather (+2)</td>	
+                <td>You are borne aloft by winds under your command. You can fly for a number of minutes equal to your Magic Characteristic with a Flying Movement of 6. For more information on flying, see Chapter 6: Combat, Damage, and Movement. You cannot cast this spell on others.</td>	</tr>
+            <tr>	<td>Wings Of The Falcon</td>	
+                <td>Beasts</td>	
+                <td>3</td>	
+                <td>25</td>	
+                <td>250</td>	
+                <td>2 full actions</td>	
+                <td>A live falcon (+3)</td>	
+                <td>You grow wings from your back, which are strong enough to bear you aloft. You can fly for a number of minutes equal to your Magic Characteristic with a Flying Movement of 4. For more information on flying, see Chapter 6: Combat, Movement, and Damage. Obviously, simple folk, seeing someone so transformed by wings of the falcon, will assume that you are some form of Chaos Daemon and react appropriately.</td>	</tr>
+            <tr>	<td>Winter Frost</td>	
+                <td>Life</td>	
+                <td>3</td>	
+                <td>25</td>	
+                <td>250</td>	
+                <td>Full action</td>	
+                <td>A vial of melted snow gathered from a mountain’s peak (+3)</td>	
+                <td>You coat everything in a target area within 48 yards (24 squares) of you with a thick layer of frost. Use the large template. Anyone affected takes a Damage 4 hit and must make a successful Will Power Test or be helpless for 1 round. The frost remains for a number of minutes equal to your Magic Characteristic. Movement in this area is at half rate.</td>	</tr>
+            <tr>	<td>Word Of Pain</td>	
+                <td>Chaos</td>	
+                <td>3</td>	
+                <td>27</td>	
+                <td>270</td>	
+                <td>Half action</td>	
+                <td>The blood of a Daemon (+3)</td>	
+                <td>You speak one of the secret names of the Chaos Gods. Simply annunciating this word causes those around you incredible pain. Centre the large template on yourself. Those affected take a Damage 8 hit that ignores armour, but not toughness bonus, and must make a successful Will Power Test or become helpless for 1 round. You are not affected by word of pain.</td>	</tr>
+            <tr>	<td>Youth’S Bane</td>	
+                <td>Death</td>	
+                <td>3</td>	
+                <td>23</td>	
+                <td>230</td>	
+                <td>Full action</td>	
+                <td>A cutting of ivy from the grave of a Priest (+3)</td>	
+                <td>You cause one character within 12 yards (6 squares) to age years in a matter of seconds. The target must make a successful Will Power Test or permanently lose 1d10% from his Strength and Toughness Characteristics. Whilst it affects animals, youth’s bane has no effect on Daemons and the Undead. Similarly, it has no effect on items and natural materials such as food, plants, leather etc.</td>	</tr>
+            
+        </table>
+    
+        <script src="tablesorter.js"></script></tbody>
+
+    </div>
+
+    <div class="five">
+        
+    </div>
+
+    <div class="four">
+        <ul class="footer" style="list-style: circle;">
+            <li> <a href="#top">Return to top</a></li>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="https://roll20.net/welcome" target="_blank">Roll20</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+        <meta charset="utf-8">
+        <title>Sidebar Menu with sub-menu | CodingNepal</title>
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="sidebar.css">
+        <link rel="stylesheet" href="grid.css">
+        <link rel="stylesheet" href="dropdown.js">
+        <link rel="stylesheet" href="active.js">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="parent">
+
+    <div class="one">Warhammer 2. edition - Rules
+
+</div>
+
+    <div class="two">
+        <div class="btn">
+                <span class="fas fa-arrow-down"></span>
+        </div>
+            <div class="cont_center">
+                <nav class="sidebar">
+                    <div class="text">
+                       <img class="text" src="../channel-picture/dagon.png" alt="background-header" 
+                        style="width:250px; transform: scaleX(-1);">
+                    </div>
+                        <ul>
+                            <li class="active"><a href="index.html">Metveit & Keepers</a></li>
+                            <li>
+                            <a href="#" class="feat-btn">Warhammer
+                            <span class="fas fa-caret-down first"></span>
+                            </a>
+                                <ul class="feat-show">
+                                    <li><a href="war_chagen.html">Character Generation</a></li>
+                                    <li><a href="war_ancestries.html">Ancestries</a></li>
+                                    <li><a href="war_bascar.html">Basic Careers</a></li>
+                                    <li><a href="war_advcar.html">Advanced Careers</a></li>
+                                    <li><a href="war_talents.html">Talents</a></li>
+                                    <li><a href="war_skills.html">Skills</a></li>
+                                    <li><a href="war_spells.html">Spells</a></li>
+                                    <li><a href="war_equip.html">Equipment</a></li>
+                                    <li><a href="war_rules.html">Rules</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                            <a href="#" class="serv-btn">Conan 2d20
+                            <span class="fas fa-caret-down second"></span>
+                            </a>
+                            <ul class="serv-show">
+                                <li><a href="con_chagen">Character Generation</a></li>
+                                <li><a href="con_home">Homeland</a></li>
+                                <li><a href="con_arche">Archetypes</a></li>
+                                <li><a href="con_talent">Talents</a></li>
+                                <li><a href="con_spell">Spells</a></li>
+                                <li><a href="con_equip">Equipment</a></li>
+                                <li><a href="con_rule">Rules</a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#" class="shor-btn">Symbaroum 5e
+                                <span class="fas fa-caret-down third"></span>
+                                </a>
+                                <ul class="shor-show">
+                                    <li><a href="sym_chagen">Character Generation </a></li>
+                                    <li><a href="sym_ancest">Ancestries </a></li>
+                                    <li><!-- Slett dette om det er problemer med tredje undermeny -->
+                                        <a href="#" class="thir-btn">Classes
+                                        <span class="fas fa-caret-down fourth"></span>
+                                        </a>
+                                            <ul class="thir-show">
+                                                <li><a href="sym_capt.html">Captain</a></li>
+                                                <li><a href="sym_hunt.html">Hunter</a></li>
+                                                <li><a href="sym_myst.html">Mystic</a></li>
+                                                <li><a href="sym_scho.html">Scholar</a></li>
+                                                <li><a href="sym_scou.html">Scoundrel</a></li>
+                                                <li><a href="sym_warr.html">Warrior</a></li>
+                                            </ul>
+                                    </li>
+                                    <li><a href="sym_feat">Feats </a></li>
+                                    <li><a href="sym_skill">Skills </a></li>
+                                    <li><a href="sym_spell">Spells </a></li>
+                                    <li><a href="sym_equip">Equipment </a></li>
+                                    <li><a href="sym_rule">Rules </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="house_rule">House Rules</a></li>
+                            <li><a href="homebrew">Homebrew</a></li>
+                            <li><a href="campaigns">Campaigns</a></li>
+                        </ul> 
+                </nav>
+                <script src="dropdown.js"></script>
+            </div>    
+    </div>
+
+    <div class="three">
+            <h1>Rules </h1> <br> <br>
+            <h2>Combat Round: </h2><br>
+            Each character, NPC or monster can take turn within a single round. A turn will have the following structure
+            
+            <li>Step 1. Roll Initiative: The character’s initiative score is equal to Agility plus 1d10. </li>
+            <li>Step 2. Determine Initiative Order: The GM ranks all the initiative scores, including NPCs and monsters, from highest to lowest. </li>
+            <li>Step 3. Surprise: When beginning a combat the GM determines if any of the combatants are surprised. Surprised combatants lose their turn on the first round of combat. </li>
+            <li>Step 4. Characters Take Turns: Starting with the participant with the highest Initiative score.</li>
+            <li>Step 5. Round Ends: Once each participant has taken a turn, the round is over.</li>
+
+            <br> <br><h2>Actions: </h2><br>
+      
+                        There are three types of actions: 
+                        <li><strong>Full Actions:</strong> You can only take one Full Action.</li>
+                        <li><strong>Half Actions:</strong> You can take two Half Actions.</li>
+                        <li><strong>Free Actions:</strong> You can take as many as you want, but GM might set limits. </li><br>
+
+                <h3 class="header3"><p>Basic Actions (start with these):</p></h3> <br>
+                <h4>	Aim (Half Action) 	</h4>	The character takes extra time to set up a melee or missile attack, thus increasing the chance to hit. If the character’s following action is a standard attack, he gains a +10% bonus to Weapon Skill (for melee attacks) or Ballistic Skill (for ranged attacks).<br><br>
+                <h4>	Cast (Varies) 	</h4>	The character unleashes a magic spell. If the character spends an extra half action, the Casting Roll can be augmented with a Channelling Skill Test. See Chapter 7: Magic for more information. Casting can be an extended action. You cannot cast more than one spell per round.<br><br>
+                <h4>	Charge Attack (Full Action) 	</h4>	The character rushes up to an opponent and delivers a single attack. The opponent must be at least 4 yards (2 squares) away from the character but within the character’s charge move (see Table 6-1: Combat Movement in Yards). The last 4 yards (2 squares) of the charge must be in a straight line, so the charger can build up speed and line up with the target. The charging character gains a +10% Weapon Skill bonus.<br><br>
+                <h4>	Disengage (Full Action) 	</h4>	The character breaks off from melee combat and may move away (see Table 6-1: Combat Movement in Yards for distances). Difficult terrain like rubble or underbrush reduces distances moved by half (round up). If trying to move away from one or more melee opponents without using the disengage action, each opponent gets a free attack against the character before he moves away. This is a bonus attack and is made in addition to any other attacks opponent’s make during their turn.<br><br>
+                <h4>	Move (Half Action) 	</h4>	The character can make a short move (see Table 6-1: Combat Movement in Yards for distances). Difficult terrain like rubble or underbrush reduces distances moved by half (round up).<br><br>
+                <h4>	Ready (HalfAction) 	</h4>	The character can unsheathe a weapon, or pull an item out of a convenient pouch or pocket. The character also put away an item already in hand at the same time. So, for example, a character could sheathe a sword and unsheathe a dagger as one action. A character can also use this action to take a flask or other container and drink a draught.<br><br>
+                <h4>	Reload (Varies) 	</h4>	The character can reload a missile weapon. See Chapter 5: Equipment for the time taken to reload different ranged weapons. Reload can be an extended action.<br><br>
+                <h4>	Stand/Mount (Half Action) 	</h4>	A character can get up if currently on the ground, or mount a riding animal like a horse or pony.<br><br>
+                <h4>	Standard Attack (Half Action)	</h4>	A character can make one melee or ranged attack.<br><br>
+                <h4>	Swift Attack (Full Action) 	</h4>	The character can make a number of melee or ranged attacks equal to his Attacks Characteristic. The character must have Attacks 2 or better to take advantage of this action. If making a missile attack, a character can only use this action if the weapon can be reloaded as a free action or if the character has a loaded pistol weapon in each hand. In the latter case, the character can make a maximum of 2 attacks (one per weapon).<br><br>
+                <h4>	Use a Skill (Varies) 	</h4>	The character uses a skill, which usually involves making a Skill Test. See Chapter 4: Skills and Talents. This can be an extended action.<br><br>
+                
+                <h3 class="header3"><p>Advanced Actions (expand with these):</p></h3> <br>
+                <h4>	All Out Attack (Full Action) 	</h4>	The character makes a furious melee attack, exposing himself to danger in order to land a forceful blow. The character’s melee attack gains a +20% Weapon Skill bonus. However, until his next turn, the character cannot parry or dodge.<br><br>
+                <h4>	Defensive Stance (Full Action) 	</h4>	The character strikes no blows this round, preferring instead to concentrate on self-defence. Until his next turn, all melee attacks against the character suffer a –20% Weapon Skill penalty.<br><br>
+                <h4>	Delay (Half Action) 	</h4>	The character waits and watches for an opportunity. When the delay action is used the character’s turn ends immediately, but a half action is reserved for later use. Any time before his next turn, the character can take his half action. If two conflicting characters are both trying to use a delayed action simultaneously, make an Opposed Agility Test to see who acts first. If the prepared action is not taken before the character’s next turn, it is lost.<br><br>
+                <h4>	Feint (Half Action) 	</h4>	The character pretends to attack in one direction, deceiving his opponent and throwing off his defence. This is resolved as an Opposed Weapon Skill Test. If the character wins, his next attack cannot be either dodged or parried. If the character’s next action is anything other than a standard attack, this bonus is lost.<br><br>
+                <h4>	Guarded Attack (Full Action) 	</h4>	The character attacks carefully, making sure he is well defended from counter blows. He makes a melee attack with a –10% Weapon Skill penalty. Until his next turn, the character gains a +10% bonus on any attempted parries and dodges.<br><br>
+                <h4>	Jump/Leap (Full Action) 	</h4>	The character jumps down or leaps across something. For details on jumping and leaping, see page 138 of this chapter.<br><br>
+                <h4>	Manoeuvre (Half Action) 	</h4>	The character uses superior footwork and aggression to force his opponent to move 2 yards (1 square) in a direction nominated by the player. If desired the character can advance 2 yards (1 square) as well. Manoeuvre is resolved as an Opposed Weapon Skill Test. If successful the character’s opponent is moved as described. The opponent cannot be forced into another character or terrain feature (wall, barrel, etc.).<br><br>
+                <h4>	Parrying Stance (Half Action)	</h4>	 The character readies to parry an incoming blow. Any time before his next turn, the character can try to parry one successful melee attack against him as long as he is aware of the attack. Parrying stance ends at the start of his next turn, regardless of whether he parried a blow. Should a character have a weapon in their left hand (this included shields and bucklers) he may parry once per round as a free action. See Dodge and Parry on page 129 for more detailed information on this.<br><br>
+                <h4>	Run (Full Action) 	</h4>	The character runs at full speed (see Table 6-1: Combat Movement in Yards for distances). This makes the character harder to hit with missile weapons but easy prey for melee attacks because he isn’t actively defending. Until the character’s next turn, ranged attacks against him suffer a –20% Ballistic Skill penalty, but melee attacks gain a +20% Weapon Skill bonus. Characters cannot run in difficult terrain.<br><br>
+            
+            <br> <br><h2>Make an Attack: </h2><br>
+
+                Roll 1d100, using Weapon Skill or Ballistic Skill (shooting into melee: <strong>-20%</strong>, shooting at extreme range (twice of listed range):
+                 <strong>-30%</strong>). If you roll equal to or less the attack hits. If the attack hits the opponent can choose to Dodge or Parry
+                Parrying requires no special skill or talent to attempt but you have to have spent a Half Action to enter Parrying Stance to be prepeared to 
+                make a parry. 
+                If you have a weapon in your secondary hand or a Shield you can parry as a free action even if you have not entered a Parrying Stance.
+                Opponent can choose to Dodge instead, if it is trained in the Advanced Skill. You can never Dodge and Parry the same attack, and you can 
+                only make on Parry and one Dodge each Turn. If the attack hits you determine Hit Location: <br><br>
+                
+                <table class="rules"> <caption>Hit Location:</caption>	<tbody>
+                    <th >Roll 1d100</th>
+                    <th >Location</th>
+                    <tr> <td >01-15</td> <td>Head</td> </tr>
+                    <tr> <td>16-35</td> <td>Right Arm</td> </tr>
+                    <tr> <td>36-55</td> <td>Left Arm</td> </tr>
+                    <tr> <td>56-80</td> <td>Body</td> </tr>
+                    <tr> <td>81-90</td> <td>Right Leg</td> </tr>
+                    <tr> <td>91-00</td> <td>Left Leg</td> </tr>
+                </tbody></table> <br>
+                
+                After determining Hit Location roll damage using 1d10 (Exploding on <strong>10</strong>) and add modifiers from weapon and ability. 
+                Reduce damage by opponents Thoughness Bonus and any Armor protecting the Hit Location. Unarmed attacks inflict <strong>SB-4</strong> damage and 
+                Armour Points count double against unarmed attacks.  <br>  <br>            
+
+            <h3 class="header3"><p>Attacking with two weapons:</p></h3> <br> 
+                The following rules apply when you are fighting with two weapons. <br>
+                <li>A character must use one of the following in a primary hand: Dagger, Foil, Hand Weapon, Morning Star, or Rapier. </li>
+                <li> A character must use one of the following in a secondary hand: Buckler, Dagger, Hand Weapon, Main Gauche, Shield, or Sword-breaker. </li>
+                <li> A character may use either hand to make an attack. This does not give any extra attacks. Attacks from a secondary hand suffer a <strong>-20%</strong> Weapon Skill penalty. </li>
+                <li> A character can parry as a free action once per round. This parry can be used at any point during the round. The limit of 1 parry per round remains in effect.</li> <br><br>
+
+            <h3 class="header3"><p>Table: Combat Difficulty:</p></h3> <br>   
+
+            <table class="rules"><caption>Difficulty Modifier:</caption><tbody>
+                <th>Difficulty</th> <th>Skill Modifier</th><th>Example</th>
+                <tr><td>  Very Easy  </td><td> +30%  </td><td>  Attacking an unaware opponent. </td></tr>
+                <tr><td>  Easy  </td><td> +20%  </td><td> Attacking a foe who isoutnumbered 3 to 1. Attacking a stunned opponent.  </td></tr>
+                <tr><td>  Routine  </td><td>  +10% </td><td> Attacking a foe who is outnumbered 2 to 1. Attacking a foe who is knocked down.  </td></tr>
+                <tr><td>  Average  </td><td>  0% </td><td>  Making a standard attack. </td></tr>
+                <tr><td>  Challenging  </td><td>   -10%</td><td> Attacking whilst knocked down. Attacking/dodging when in the mud or heavy rain.</td></tr>
+                <tr><td>  Hard </td><td>  -20% </td><td>   Attacking a specific hit location. Dodging whilst knocked down. </td></tr>
+                <tr><td>  Very Hard  </td><td>  -30% </td><td>  Attacking/dodging in the deep snow. Parrying a giant’s club. </td></tr>
+            </tbody>
+            </table>
+
+            <br> <br><h2>Wounds and Healing: </h2><br>
+
+            <h3 class="header3"><p>Damage:</p></h3> <br>    
+                Damage will have effect depending on the type of damage or the number of Wounds you have recieved:<br> <br>
+                <strong>Lightly Wounded:</strong> More than 3 Wounds remaining. Recover 1 Wound per day through natural healing.<br>
+                <strong>Heavily Wounded:</strong> 3 Wounds or fewer remaining. Recovers 1 Wound per week through natural healing.<br>
+                <strong>Stunned:</strong> Cannot take any actions. Opponents gain a +20% Weapon Skill bonus when attacking.<br>
+                <strong>Helpless:</strong> Attacks against the character automatically hit and inflict an extra 1d10 damage.<br><br>
+
+            <h3 class="header3"><p>Critical Hits:</p></h3> <br>          
+                When a character takes more damage than he has Wounds remaining, a Critical Hit is suffered. 
+                Roll on the Critical Hit table, for the appropriate Hit Location. 
+                To resolve the Critical Hit, two pieces of information are required. First, the hit location. 
+                Second, the Critical Value, which ranges from +1 to +10 (with +10 representing the most severe injuries). <br><br>
+                The Critical Value is the amount of damage left over after all Wounds have been lost. 
+                If a character has 3 Wounds remaining, for example, and takes 8 points of damage, he suffers a Critical Hit with a Critical Value of +5. Roll a 1d100 and consult the Critical hit table, cross-referencing with the Critical Value.<br><br>
+                <p style="font-style: italic;">Example: Characer has 2 wounds. They take 9 points of damage to the head. 
+                This results in a Critical Hit with a Critical Value of <span style="color: red;">+7.</span>
+                The GM rolls percentile dice and gets an <span style="color: red;">85</span>. 
+                Cross-referencing this with the <span style="color: red;">+7</span> column, the GM sees he’s gotten Critical Effect <span style="color: rgb(240, 85, 85);">#7</span>. 
+                He then looks at Table 6-6: Critical Effects—Head and reads the result: <span style="color: rgb(240, 85, 85);">“Knocked out for 1d10 minutes.”</span> </p>
+                <br>
+
+                
+            <table class="rules"> <caption>Table: Critical Hit</caption>	<tbody>
+            	<th>D100 Roll </th>	<th>1</th>	<th>2</th>	<th>3</th>	<th>4</th>	<th>5</th>	<th>6</th>	<th style="color: red;">7</th>	<th>8</th>	<th>9</th>	<th>10</th>	
+                <tr>	<td>01-10</td>	<td>5</td>	<td>7</td>	<td>9</td>	<td>10</td>	<td>10</td>	<td>10</td>	<td>10</td>	<td>10</td>	<td>10</td>	<td>10</td>	</tr>
+                <tr>	<td>10-20</td>	<td>5</td>	<td>6</td>	<td>8</td>	<td>9</td>	<td>10</td>	<td>10</td>	<td>10</td>	<td>10</td>	<td>10</td>	<td>10</td>	</tr>
+                <tr>	<td>21-30 </td>	<td>4</td>	<td>6</td>	<td>8</td>	<td>9</td>	<td>9</td>	<td>10</td>	<td>10</td>	<td>10</td>	<td>10</td>	<td>10</td>	</tr>
+                <tr>	<td>31-40 </td>	<td>4</td>	<td>5</td>	<td>7</td>	<td>8</td>	<td>9</td>	<td>9</td>	<td>10</td>	<td>10</td>	<td>10</td>	<td>10</td>	</tr>
+                <tr>	<td>41-50 </td>	<td>3</td>	<td>5</td>	<td>7</td>	<td>8</td>	<td>8</td>	<td>9</td>	<td>9</td>	<td>10</td>	<td>10</td>	<td>10</td>	</tr>
+                <tr>	<td>51-60 </td>	<td>3</td>	<td>4</td>	<td>6</td>	<td>7</td>	<td>8</td>	<td>8</td>	<td>9</td>	<td>9</td>	<td>10</td>	<td>10</td>	</tr>
+                <tr>	<td>61-70 </td>	<td>2</td>	<td>4</td>	<td>6</td>	<td>7</td>	<td>7</td>	<td>8</td>	<td>8</td>	<td>9</td>	<td>9</td>	<td>10</td>	</tr>
+                <tr>	<td>71-80 </td>	<td>2</td>	<td>3</td>	<td>5</td>	<td>6</td>	<td>7</td>	<td>7</td>	<td>8</td>	<td>8</td>	<td>9</td>	<td>9</td>	</tr>
+                <tr>	<td style="color: red;">81-90 </td>	<td>1</td>	<td>3</td>	<td>5</td>	<td>6</td>	<td>6</td>	<td >7</td>	<td style="background-color: rgb(240, 85, 85);">7</td>	<td>8</td>	<td>8</td>	<td>9</td>	</tr>
+                <tr >	<td>91-00 </td>	<td>1</td>	<td>2</td>	<td>4</td>	<td>5</td>	<td>6</td>	<td>6</td>	<td>7</td>	<td>7</td>	<td>8</td>	<td>8</td>	</tr>
+            </tbody></table> <br>
+            
+            <h3 class="header3"><p>Critical Hit Effects:</p></h3>   
+            <br>
+            <!-- vurdere å legge denne tabellen inn i en egen lenke -->
+            
+            <table class="critical"> 
+                <caption>Table: Critical Effect</caption>	<tbody style="vertical-align: top; text-align: left">
+                <th>Roll 1d10</th> <th>Arm</th>	<th>Leg</th>	<th>Head</th>	<th>Body</th>	
+                <tr>	<td>1</td> <td>Drops anything held in that hand. A shield, if worn, is not affected, since it’s strapped on.</td>	<td>Stumbles. Character can only take a half action on his next turn.</td>	<td>Disoriented by the blow. Character can only take a half action on his next turn.</td>	<td>The wind is knocked out of the character. All tests and attacks suffer a –20% penalty for one round.</td>	</tr>
+                <tr>	<td>2</td> <td>Arm struck numb and cannot be used for 1 round.</td>	<td>Leg struck numb by the attack. Character’s Movement Characteristic is reduced to 1 for one round and during that time he cannot dodge and suffers a –20% penalty on related Agility Tests.</td>	<td>Ears bashed causing ears to ring and head to spin. Character cannot take any actions for 1 round.</td>	<td>Struck in the groin. The pain is such that the character cannot take any actions for one round.</td>	</tr>
+                <tr>	<td>3</td> <td>Hand incapacitated until medical attention is received. Anything held in this hand is dropped (again, excepting a shield).</td>	<td>Leg incapacitated until medical attention is received. Character’s Movement Characteristic is reduced to 1 and he cannot dodge. Related Agility Tests also suffer a –20% penalty.</td>	<td>The blow inflicts a nasty scalp wound. Blood runs into eyes, causing character to suffer a –10% WS penalty until medical attention is received.</td>	<td>Ribs busted by ferocity of attack. Character takes a –10% WS penalty until medical attention is received.</td>	</tr>
+                <tr>	<td>4</td> <td>Armour damaged. Armour Points on this location are reduced by 1 until the armour is repaired with a successful Trade (Armourer) Skill Test. If character isn’t wearing any armour or players are using the Basic Armour system, use the #2 result instead.</td>	<td>Armour damaged. Armour Points on this location are reduced by 1 until the armour is repaired with a successful Trade (Armourer) Skill Test. If character isn’t wearing any armour or players are using the Basic Armour system, use the #2 result instead.</td>	<td>Armour damaged. Armour Points on this location are reduced by 1 until the armour is repaired with a successful Trade (Armourer) Skill Test. If character isn’t wearing any armour or players are using the Basic Armour system, use the #2 result instead.</td>	<td>Armour damaged. Armour Points on this location are reduced by 1 until the armour is repaired with a successful Trade (Armourer) Skill Test. If character isn’t wearing any armour or players are using the Basic Armour system, use the #2 result instead.</td>	</tr>
+                <tr>	<td>5</td> <td>Arm incapacitated until medical attention is received. Anything held in this hand is dropped (excepting a shield).</td>	<td>Knocked to the ground and dazed. All character’s tests and attacks suffer a –30% penalty for one round and he must use the stand action to regain his feet.</td>	<td>Knocked to the ground and dazed. All his tests and attacks suffer a –30% penalty for one round and he must use the stand action to regain his feet.</td>	<td>Knocked to the ground and badly winded. All his tests and attacks suffer a –30% penalty for one round and he must use the stand action to regain his feet.</td>	</tr>
+                <tr>	<td>6</td> <td>Arm demolished by attack. Anything held in this hand is dropped (excepting a shield). Blood loss is such that character has a 20% chance of dying each round until medical attention is received. Test at the start of victim’s turn each round. Use the Sudden Death rules for any further Critical Hits on this opponent.</td>	<td>Leg demolished and character is considered helpless. Blood loss is such that the victim has a 20% chance of dying each round until medical attention is received. Test at the start of his turn each round. Use the Sudden Death rules for any further Critical Hits on this character.</td>	<td>Stunned for 1d10 rounds.</td>	<td>Stunned for 1d10 rounds.</td>	</tr>
+                <tr>	<td>7</td> <td>Hand turned into a bloody ruin. Anything held in this hand is dropped (excepting a shield). Blood loss is such that character has a 20% chance of dying each round until medical attention is received. Test at the start of victim’s turn each round. Use the Sudden Death rules for any further Critical Hits on this opponent. If he survives this combat, he must make a successful Toughness Test or lose the hand permanently.</td>	<td>Leg is turned into a bloody ruin and character is considered helpless. Blood loss is such that the victim has a 20% chance of dying each round until medical attention is received. Test at the start of his turn each round. Use the Sudden Death rules for any further Critical Hits on this character. If he survives this combat, he must make a successful Toughness Test or lose the foot permanently.</td>	<td style="background-color: rgb(240, 85, 85);">Knocked out for 1d10 minutes. Use the Sudden Death rules for any further Critical Hits on this character.</td>	<td>The blow results in serious internal bleeding and the character is helpless. Blood loss is such that the victim has a 20% chance of dying each round until medical attention is received. Test at the start of his turn each round. Use the Sudden Death rules for any further Critical Hits on this opponent.</td>	</tr>
+                <tr>	<td>8</td> <td>Arm is now a dangling mass of bloody meat. Anything held in this hand is dropped (excepting a shield). Blood loss is such that character has a 20% chance of dying each round until medical attention is received. Test at the start of victim’s turn each round. Use the Sudden Death rules for any further Critical Hits on this opponent. If he survives this combat, he must make a successful Toughness Test or lose the arm from the elbow down permanently.</td>	<td>Leg turned into a dangling mass of bloody meat and character is considered helpless. Blood loss is such that the victim has a 20% chance of dying each round until medical attention is received. Test at the start of his turn each round. Use the Sudden Death rules for any further Critical Hits on this character. If he survives this combat, he must make a successful Toughness Test or lose the leg from the knee down permanently.</td>	<td>Face shattered and knocked to the ground. Character is now considered helpless. Blood loss is such that the victim has a 20% chance of dying each round until medical attention is received. Test at the start of his turn each round. Use the Sudden Death rules for any further Critical Hits on this character. If he survives this combat, he must make a successful Toughness Test or lose an eye permanently.</td>	<td>Spine pulverized and character is knocked to the ground. Character may do nothing until medical attention is received and is considered helpless. Use the Sudden Death rules for any further Critical Hits on this opponent. If he survives this combat, he must make a successful Toughness Test or become permanently paralyzed from the waist down.</td>	</tr>
+                <tr>	<td>9</td> <td>Major artery severed. After a fraction of a second, character collapses with blood pouring out of the ruins of his shoulder. Death from shock and blood loss is almost instantaneous.</td>	<td>Major artery severed. After a fraction of a second, character collapses with blood pouring out of the ruins of his leg. Death from shock and blood loss is almost instantaneous.</td>	<td>Skull pierced by a mighty blow. Death is instantaneous.</td>	<td>Several internal organs are ruptured by the violence of the blow causing death in a matter of seconds.</td>	</tr>
+                <tr>	<td>10</td> <td>Killed in whatever spectacular and gore-drenched fashion the player or GM cares to describe.</td>	<td>Killed in whatever spectacular and gore-drenched fashion the player or GM cares to describe.</td>	<td>Killed in whatever spectacular and gore-drenched fashion the player or GM cares to describe.</td>	<td>Killed in whatever spectacular and gore-drenched fashion the player or GM cares to describe.</td>	</tr>
+            </tbody></table> <br>
+          
+            
+            <br> <br><h2>Insanity: </h2><br>
+            <h3 class="header3"><p>Insanity points:</p></h3> <br> 
+
+            Insanity Points (IP) are a measure of sanity. The more Insanity Points a character has, the closer he is to mental <span style="color: rgb(240, 85, 85);"><strong>in</strong></span>stability. Insanity points are gained in the following ways:
+                <p><strong>Critical Hits:</strong> One Insanity Point is gained each time the character takes a Critical Hit. The point remains even after the resulting injuries have healed. It’s possible for a character to gain a great deal of Insanity Points this way.</p>
+                <p><strong>Terror:</strong> One Insanity Point is gained each time the character fails a Terror Test. </p>
+                <p><strong>Other:</strong> Characters may gain Insanity Points at the GM’s discretion after experiencing some truly terrible event.</p><br>
+
+            <p>
+                <table class="simple_table" style="float: right; margin-left: 50px; "> <caption>Table: Insanities</caption>	<tbody>
+                    <th>% roll </th> <th>Insanity</th>
+                        <tr>	<td>01-05 </td>	<td>	The Beast Within</td></tr>
+                        <tr>	<td>06-10 </td>	<td>	Blasphemous Rage</td></tr>
+                        <tr>	<td>11-15 </td>	<td>	Blasted Brain</td></tr>
+                        <tr>	<td>16-20 </td>	<td>	Body of Rot</td></tr>
+                        <tr>	<td>21-25 </td>	<td>	Delirious Savior</td></tr>
+                        <tr>	<td>26-30 </td>	<td>	Desperate and Doomed</td></tr>
+                        <tr>	<td>31-35 </td>	<td>	The Fear</td></tr>
+                        <tr>	<td>36-40 </td>	<td>	Firebug</td></tr>
+                        <tr>	<td>41-45 </td>	<td>	Fortune’s Thrall</td></tr>
+                        <tr>	<td>46-50 </td>	<td>	The Glorious Corruption</td></tr>
+                        <tr>	<td>51-55 </td>	<td>	Heart of Despair</td></tr>
+                        <tr>	<td>56-60 </td>	<td>	Host of Fiends</td></tr>
+                        <tr>	<td>61-65 </td>	<td>	Knives of Memory</td></tr>
+                        <tr>	<td>66-70 </td>	<td>	Lost Heart</td></tr>
+                        <tr>	<td>71-75 </td>	<td>	Mandrake Man</td></tr>
+                        <tr>	<td>76-80 </td>	<td>	Profane Persecutions</td></tr>
+                        <tr>	<td>81-85 </td>	<td>	Restless Fingers</td></tr>
+                        <tr>	<td>86-90 </td>	<td>	Terrible Thirstings</td></tr>
+                        <tr>	<td>91-95 </td>	<td>	Venomous Thoughts</td></tr>
+                        <tr>	<td>95-100 </td>	<td>	Wheel of Dread and Pleasure</td></tr>
+                </tbody></table></p>
+
+                <h3>Curing Insanity:</h3>
+                <p><strong>Surgery:</strong>
+                The first is surgery. This is a crude experimental process that is quite dangerous for the patient. To even attempt it, the medical practitioner must have the Heal Wounds skill and the Surgery talent. The process takes 1d10 hours, at the end of which a Heal Wounds Skill Test must be made. The Test Difficulty is either Challenging, Hard, or Very Hard, depending on what the surgeon is trying to achieve. Actually curing an insanity is Very Hard. Table: Insanity Surgery summarizes what tests and what can be achieved with a successful Heal Wounds Test. All surgery of this type reduces the patient to 0 Wounds.</p>
+                <br>
+                <p><strong>Drugs:</strong>
+                Making a drug requires Trade Tools (Apothecary), 2d10 gold crowns worth of ingredients, and takes 1d10 hours. If a successful Very Hard (–30%) Trade (Apothecary) Test is made, the drug works and can suppress the character’s madness for one week. If the test is failed, the mixture is off and potentially dangerous. The GM should roll on Table: Quack Medicine to find out what sort of effect it will have on the imbiber.</p>
+                <br>
+                <p><strong>Magic:</strong>
+                There are several spells that can help the insane, most notably the Shallyan spell cure insanity. Transmutation of the unstable mind also may help (or not!).</p><br>
+                <br>
+                <p style="margin-top: 50px;">
+                <table class="simple_table"> <caption>Table: Insanity surgery</caption>	<tbody>
+                <th>Heal Difficulty </th> <th>Effects of Successful Test </th>
+                <tr>	<td>	Challenging 	</td> <td> Patient loses 1 IP </td></tr>
+                <tr>	<td>		Hard 	</td> <td>  	Patient loses 1d10 IPs</td></tr>
+                <tr>	<td>		Very Hard 	</td> <td>  	Patient cured of 1 insanity</td></tr>
+                </tbody></table>
+
+                <table class="simple_table"> <caption>Table: Botched Surgery</caption>	<tbody>
+                <th>% Roll </th> <th>Results </th>
+                <tr>	<td>	01-20	</td>	<td> 	A Surgical Triumph: Whilst the surgery was ineffective, neither did it damage the patient.	</td></tr>
+                <tr>	<td>	21-40	</td>	<td> 	 You Won’t Feel a Thing: The patient gains 1d10 Insanity Points.	</td></tr>
+                <tr>	<td>	41-60	</td>	<td> 	 Whoops!: The unfortunate patient loses 1d10 Intelligence permanently.	</td></tr>
+                <tr>	<td>	61-80	</td>	<td> 	 I Hate It When They Thrash: The patient must make a Toughness Test or die. Even if he survives, he loses 1d10 Intelligence 
+                                                        permanently and gains 1d0 Insanity Points.	</td></tr>
+                <tr>	<td>	81-100	</td>	<td> 	 We’ve Got a Bleeder!: The patient dies on the operating table from severe trauma and blood loss.	</td></tr>
+                </tbody></table>
+
+                <table class="simple_table"> <caption>Table: Quack Medicine</caption>	<tbody>
+                <th>% Roll </th> <th>Results </th>
+                <tr>	<td>	01-20	</td>	<td> 	 Sure-Fire Cure: The drug is useless and the apothecary knows it.	</td></tr>
+                <tr>	<td>	21-40	</td>	<td> 	 Whim and Tonic: The drug is useless but counts as an alcoholic drink.	</td></tr>
+                <tr>	<td>	41-60	</td>	<td> 	 May Cause Drowsiness: The drug knocks the imbiber out for 1d10 hours.	</td></tr>
+                <tr>	<td>	61-80	</td>	<td> 	 Tincture of Mercury: The drug causes the imbiber to gain 1 Insanity Point.	</td></tr>
+                <tr>	<td>	81-100	</td>	<td> 	 Medicinal Purge: The drug is poison. The imbiber must make a successful Toughness Test or lose 1d10 Wounds, regardless of TB.	</td></tr>
+                </tbody></table>
+
+                <table class="simple_table"> <caption>Table: Chaos Mutations</caption>	<tbody>
+                    <th>% Roll </th> <th>Results </th>
+                    <tr>	<td>	01-09	</td>	<td> 	  Animalistic Legs +1 to Movement Characteristic	</td></tr>
+                    <tr>	<td>	10-18	</td>	<td> 	  Emaciated Appearance –1d10% to Strength Characteristic	</td></tr>
+                    <tr>	<td>	19-27	</td>	<td> 	  Grossly Fat +1 to Wounds Characteristic, 1d10% to Strength Characteristic	</td></tr>
+                    <tr>	<td>	28-36	</td>	<td> 	  Horns Can be used to make attacks, SB–1 Damage	</td></tr>
+                    <tr>	<td>	37-45	</td>	<td> 	  Scales Gain 1 Armour Point on all locations	</td></tr>
+                    <tr>	<td>	46-54	</td>	<td> 	  Short Legs –1 to Movement Characteristic	</td></tr>
+                    <tr>	<td>	55-63	</td>	<td> 	  Snout Gain Follow Trail skill	</td></tr>
+                    <tr>	<td>	64-72	</td>	<td> 	  Tail +1d10% to Agility Characteristic	</td></tr>
+                    <tr>	<td>	73-81	</td>	<td> 	  Tentacle-like Arms +10% bonus on all grappling-related tests	</td></tr>
+                    <tr>	<td>	82-90	</td>	<td> 	  Thick Fur Gain 1 Armour Point on all locations	</td></tr>
+                    <tr>	<td>	91-100	</td>	<td> 	  Three Eyes +5% bonus to vision-based Perception Tests	</td></tr>
+                </tbody></table></p>
+        </div>
+
+    <div class="five">
+        
+    </div>
+
+    <div class="four">
+        <ul class="footer" style="list-style: circle;">
+            <li> <a href="#top">Return to top</a></li>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="https://roll20.net/welcome" target="_blank">Roll20</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
